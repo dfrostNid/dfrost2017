@@ -48,8 +48,8 @@
 	/*  Particle JS
 	------------------------------------------------------ */
 	$('.home-particles').particleground({
-	   dotColor: '#fff',
-	   lineColor: '#555555',
+	   dotColor: '#982cff',
+	   lineColor: '#17ffdd',
 	   particleRadius: 6,
 	   curveLines: true,
 	   density: 10000,

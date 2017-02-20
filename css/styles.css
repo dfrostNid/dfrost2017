@@ -6,6 +6,7 @@
 	min-height: 800px;
 	z-index: 600;
 	position: relative;
+	
 }
 #home .shadow-overlay {
 	position: absolute;
@@ -33,8 +34,9 @@
 }
 
 #home.home-particles {
-	background: #020507;
+	/*background: #020507;*/
 	overflow: hidden;
+	background: #020507 /*url('../img/star_mid.png') no-repeat center/ 100%*/;
 }
 #home.home-particles .pg-canvas {
 	position: absolute;
@@ -42,8 +44,19 @@
 	left: 0;
 	height: 100% !important;
 	width: 100% !important;
-	opacity: .12;
+	opacity: .25;
+	background: url('../img/star_tiny.png') no-repeat center/ 100%;
+    /*background-color: transparent;
+    background-image: url("../img/star_tiny.png");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;*/
 }
+
 #home.home-particles .shadow-overlay {
 	display: none;
 }
