@@ -81,6 +81,11 @@ table {border-collapse: collapse;border-spacing: 0;}
 		-webkit-transform: translateY(20px);
 	}
 }
+
+/* DFrost Logo css */
+.logo-wrapper {display: block; float:left; height: 100%; width: 100%; min-width: 500px; min-height: 500px; 
+	background: url("../img/logo.svg") no-repeat center center; margin-top: 100px}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * home section 
