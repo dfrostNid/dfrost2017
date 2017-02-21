@@ -204,6 +204,80 @@
    										 	 '</div>'));
 
    });     
+
+   	$.extend({
+	 		 getWidth: function(bool)
+            {
+                var w = $(window).width() ;
+                if(bool) w = $(window).width();
+                return w; 
+            },
+            
+            getHeight: function(bool)
+            {
+                var h = $(window).height() ;
+                if(bool) h = $(window).height();
+                
+                
+                return h;
+            },
+	 		getHalfWidth: function()
+            {
+                return parseInt($.getWidth() * .5);
+            },
+            
+            getHalfHeight: function()
+            {
+                return parseInt($.getHeight() * .5);
+            }
+        }
+	)
+	 	function addLogoMovement()
+    {
+        var logoBackHolder = document.getElementById('logo_back');
+        var logoMidHolder = document.getElementById('logo_mid');
+        var logoFrontHolder = document.getElementById('logo_front');
+        
+        var offsetTiny = 25, offsetMid = 30, offsetBig = 35; // offsetCloud = 200;
+        
+         	
+            $("html").unbind("mousemove");
+            $("html").bind("mousemove",function(e)
+            {
+                
+                var x = e.clientX, y = e.clientY;
+                var middleX = $.getHalfWidth(), middleY = $.getHalfHeight();
+                
+                if(x < middleX) x = -(middleX - x);
+                else x = x - middleX;
+                
+                if(y < middleY) y = -(middleY - y);
+                else y = y - middleY;
+                
+                var tinyX = -(parseInt((x / middleX) * offsetTiny)), tinyY = -(parseInt((y / middleY) * offsetTiny));
+                var midX = -(parseInt((x / middleX) * offsetMid)), midY = -(parseInt((y / middleY) * offsetMid));
+                var bigX = -(parseInt((x / middleX) * offsetBig)), bigY = -(parseInt((y / middleY) * offsetBig));
+            
+                var logoBackX = -130 + tinyX;
+                var logoBackY = 170 + tinyY;
+				var logoMidX = -130 + midX; 	
+				var logoMidY = 170 + midY;
+                var logoFrontX = -130 + bigX; 	
+                var logoFrontY = 170 + bigY;
+
+                TweenMax.to(logo_back,1,{marginLeft:logoBackX,top:logoBackY,ease:Expo.easeOut});
+                TweenMax.to(logo_mid,1,{marginLeft:logoMidX,top:logoMidY,ease:Expo.easeOut});
+                TweenMax.to(logo_front,1,{marginLeft:logoFrontX,top:logoFrontY,ease:Expo.easeOut});
+                               
+            })
+        
+        }
+        
+	
+    $(document).ready(function()
+        {
+            addLogoMovement();
+        });
  
 
 })(jQuery);
