@@ -87,9 +87,9 @@ table {border-collapse: collapse;border-spacing: 0;}
 .logo-wrapper {display: block; float:left; height: 100%; width: 100%; min-width: 250px; min-height: 250px; 
 	/*background: url("../img/logo.svg") no-repeat center center;*/ }
 
-.logo-wrapper #logo_back {position: absolute; z-index: 765; background: url("../img/layer1.png") no-repeat;top: 50px; left: 38%; margin-left: -130px; height: inherit; width: inherit; }
-.logo-wrapper #logo_mid {position: absolute; z-index: 766; background: url("../img/layer2.png") no-repeat;top: 50px; left: 38%; margin-left: -130px; height: inherit; width: inherit; }
-.logo-wrapper #logo_front {position: absolute; z-index: 767; background: url("../img/layer3.png") no-repeat;top: 50px; left: 38%; margin-left: -130px; height: inherit; width: inherit;}
+.logo-wrapper #logo_back {position: absolute; z-index: 765; background: url("../img/layer1.png") no-repeat;top: 70px; left: 40%; margin-left: -130px; height: inherit; width: inherit; }
+.logo-wrapper #logo_mid {position: absolute; z-index: 766; background: url("../img/layer2.png") no-repeat;top: 70px; left: 40%; margin-left: -130px; height: inherit; width: inherit; }
+.logo-wrapper #logo_front {position: absolute; z-index: 767; background: url("../img/layer3.png") no-repeat;top: 70px; left: 40%; margin-left: -130px; height: inherit; width: inherit;}
 
 /* ------------------------------------------------------------------- 
  * responsive:

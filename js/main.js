@@ -258,12 +258,12 @@
                 var midX = -(parseInt((x / middleX) * offsetMid)), midY = -(parseInt((y / middleY) * offsetMid));
                 var bigX = -(parseInt((x / middleX) * offsetBig)), bigY = -(parseInt((y / middleY) * offsetBig));
             
-                var logoBackX = -130 + tinyX;
-                var logoBackY = 170 + tinyY;
-				var logoMidX = -130 + midX; 	
-				var logoMidY = 170 + midY;
-                var logoFrontX = -130 + bigX; 	
-                var logoFrontY = 170 + bigY;
+                var logoBackX = -100 + tinyX;
+                var logoBackY = 100 + tinyY;
+				var logoMidX = -100 + midX; 	
+				var logoMidY = 100 + midY;
+                var logoFrontX = -100 + bigX; 	
+                var logoFrontY = 100 + bigY;
 
                 TweenMax.to(logo_back,1,{marginLeft:logoBackX,top:logoBackY,ease:Expo.easeOut});
                 TweenMax.to(logo_mid,1,{marginLeft:logoMidX,top:logoMidY,ease:Expo.easeOut});
