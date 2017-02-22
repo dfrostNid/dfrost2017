@@ -22,15 +22,15 @@ table {border-collapse: collapse;border-spacing: 0;}
 /*NAVBAR CSS BEGINS*/
 #topbar{position:fixed;top:0;display:block;float:none;width:100%;height:auto;background: none;z-index:1000;/*border:1px solid yellow;*/}
 #bottombar{position:absolute;bottom:0;display:block;width:100%;height:75px;background-color:#000;z-index:700;}
-.nidlogo{display:block;float:left;margin:20px 0 20px 20px;width:20.8%;height:30px;z-index:700;background-image:url(../img/NID_white_logo.png);background-repeat:no-repeat;/*border:1px solid yellow;*/}
-.topbarlinks{display:block;float:left;height:30px;margin:20px 20px 20px 0;width:76%;z-index:700;}
+.nidlogo{display:block;float:left;margin:20px 0 20px 20px;width:25%;height:30px;z-index:700;background:url(../img/NID_white_logo.png) no-repeat center;}
+.topbarlinks{display:block;float:left;height:30px;margin:20px 20px 20px 0;width:71%;z-index:700;}
 .topbarlinks h4.white{color:#fff;bottom:10px;text-align:right;}
 #topbar .topbarlinks .btn {border: 1px solid #982cff; color: #17ffdd !important; font-size: 14px; padding: 10px 20px; margin: 0 !important; text-decoration: none; vertical-align: middle; float: right;}
 #topbar .topbarlinks .btn:hover {background: #17ffdd;color: #982cff !important;}
 /*NAVBAR CSS ENDS*/
 
 /*HOME SECTION CSS BEGINS*/
-#home {background: #020507;width: 100%;height: 100%;min-height: 800px;z-index: 600;position: relative;}
+#home {background: #020507;width: 100%;height: auto;min-height: 800px;z-index: 600;position: relative;}
 #home .shadow-overlay {position: absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: .9;
 	background: -moz-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* FF3.6-15 */
 	background: -webkit-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* Chrome10-25,Safari5.1-6 */
@@ -85,8 +85,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 }
 
 /* DFrost Logo css */
-.logo-wrapper {display: block; float:left; height: 100%; width: 100%; min-width: 250px; min-height: 250px; 
-	/*background: url("../img/logo.svg") no-repeat center center;*/ }
+.logo-wrapper {display: block; float:left; height: 100%; width: 100%; }
 
 /*.logo-wrapper.fadeIn {
 
@@ -98,9 +97,9 @@ table {border-collapse: collapse;border-spacing: 0;}
 
 
 
-.logo-wrapper #logo_back {position: absolute; z-index: 765; background: url("../img/layer1.png") no-repeat;top: 70px; left: 40%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 1s;   -webkit-animation-duration: 1s;   animation-duration: 1s;}
-.logo-wrapper #logo_mid {position: absolute; z-index: 766; background: url("../img/layer2.png") no-repeat;top: 70px; left: 40%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 2s;   -webkit-animation-duration: 2s;   animation-duration: 2s;}
-.logo-wrapper #logo_front {position: absolute; z-index: 767; background: url("../img/layer3.png") no-repeat;top: 70px; left: 40%; margin-left: -130px; height: inherit; width: inherit;  /*-moz-animation-delay: 1s; -webkit-animation-delay: 1s; animation-delay: 1s;*/ -moz-animation-duration: 3s;  -webkit-animation-duration: 3s;   animation-duration: 3s;}
+.logo-wrapper #logo_back {display:block;float: left;position: absolute; z-index: 765; background: url("../img/layer1.png") no-repeat 10px 10px/40%;top: 70px; left: 40%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 1s;   -webkit-animation-duration: 1s;   animation-duration: 1s;}
+.logo-wrapper #logo_mid {display:block;float: left;position: absolute; z-index: 766; background: url("../img/layer2.png") no-repeat 10px 10px/40%;top: 70px; left: 40%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 2s;   -webkit-animation-duration: 2s;   animation-duration: 2s;}
+.logo-wrapper #logo_front {display:block;float: left;position: absolute; z-index: 767; background: url("../img/layer3.png") no-repeat 10px 10px/40%;top: 70px; left: 40%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 3s;  -webkit-animation-duration: 3s;   animation-duration: 3s;}
 
 
 /* ------------------------------------------------------------------- 
@@ -110,11 +109,18 @@ table {border-collapse: collapse;border-spacing: 0;}
 @media only screen and (max-width:1200px) {
 	.main-content-tablecell #counter {margin-bottom: 2.4rem;}
 	.main-content-tablecell #counter span {font-size: 11rem;}
+	
 }
 
 @media only screen and (max-width:1024px) {
 	.main-content-tablecell h1 {font-size: 3.5rem;}
 	.main-content-tablecell p {font-size: 1.7rem;}
+	.topbarlinks {width: 70%;}
+}
+
+@media only screen and (max-width:800px) {
+	.nidlogo{width: 30%;}
+	.topbarlinks {width: 64%;}
 }
 
 @media only screen and (max-width:768px) {
@@ -125,6 +131,14 @@ table {border-collapse: collapse;border-spacing: 0;}
 	.main-content-tablecell p {font-size: 1.6rem;}
 	.scroll-icon {right: 45px;}
 	.scroll-icon .scroll-text {font-size: 1.4rem;}
+	.logo-wrapper #logo_back, .logo-wrapper #logo_mid, .logo-wrapper #logo_front{left:45%;top:100px;}
+
+}
+
+@media only screen and (max-width:670px) {
+	.topbarlinks {width: 60%;}
+	.nidlogo {width: 33%;}
+	.logo-wrapper #logo_back, .logo-wrapper #logo_mid, .logo-wrapper #logo_front{left:48%;}
 }
 
 @media only screen and (max-width:600px) {
@@ -132,10 +146,26 @@ table {border-collapse: collapse;border-spacing: 0;}
 	.main-content-tablecell #counter {margin-bottom: .9rem;}
 	.main-content-tablecell #counter span {font-size: 8.4rem;}
 	.main-content-tablecell h1 {font-size: 2.7rem;}
+	#topbar .topbarlinks .btn {font-size: 0.7em;}
+	.topbarlinks {width: 51%;}
+	.nidlogo {width: 41%;}
+	.logo-wrapper #logo_back, .logo-wrapper #logo_mid, .logo-wrapper #logo_front{left:50%;}
 }
 
 @media only screen and (max-width:500px) {
 	.main-content-tablecell #counter span {font-size: 7.2rem;}
+	.topbarlinks {width: 45%;}
+	.nidlogo {width: 46%;}
+	.nidlogo {background: url(../img/NID_white_logo.png) no-repeat center/100%;}
+	.logo-wrapper #logo_back {background: url("../img/layer1.png") no-repeat 10px 10px/50%;}
+	.logo-wrapper #logo_mid {background: url("../img/layer2.png") no-repeat 10px 10px/50%;}
+	.logo-wrapper #logo_front {background: url("../img/layer3.png") no-repeat 10px 10px/50%;}
+}
+
+@media only screen and (max-width:448px) {
+	.main-content-tablecell #counter span {font-size: 7.2rem;}
+	.topbarlinks {width: 40%;}
+	.nidlogo {width: 50%;}
 }
 
 @media only screen and (max-width:400px) {
@@ -144,4 +174,24 @@ table {border-collapse: collapse;border-spacing: 0;}
 	.main-content-tablecell #counter span {font-size: 6rem;margin-bottom: .9rem;}
 	.main-content-tablecell #counter span sup {font-size: .2em;top: -2.8em;}
 	.main-content-tablecell h1 {font-size: 2.4rem;}
+	.nidlogo {margin: 20px 10px 10px 10px;}
+	.topbarlinks {margin: 20px 10px 10px 0;width: 42%;}
+	.logo-wrapper #logo_back {background: url("../img/layer1.png") no-repeat 10px 10px/58%;}
+	.logo-wrapper #logo_mid {background: url("../img/layer2.png") no-repeat 10px 10px/58%;}
+	.logo-wrapper #logo_front {background: url("../img/layer3.png") no-repeat 10px 10px/58%;}
+	.logo-wrapper #logo_back, .logo-wrapper #logo_mid, .logo-wrapper #logo_front{top:100px;}
+}
+
+@media only screen and (max-width:375px) {
+	.topbarlinks {width: 40%;}
+	#topbar .topbarlinks .btn {padding: 10px;}
+	.logo-wrapper #logo_back {background: url("../img/layer1.png") no-repeat 10px 10px/65%;}
+	.logo-wrapper #logo_mid {background: url("../img/layer2.png") no-repeat 10px 10px/65%;}
+	.logo-wrapper #logo_front {background: url("../img/layer3.png") no-repeat 10px 10px/65%;}
+}
+@media only screen and (max-width:340px) {
+	
+	.logo-wrapper #logo_back {background: url("../img/layer1.png") no-repeat 10px 10px/68%;}
+	.logo-wrapper #logo_mid {background: url("../img/layer2.png") no-repeat 10px 10px/68%;}
+	.logo-wrapper #logo_front {background: url("../img/layer3.png") no-repeat 10px 10px/68%;}
 }
