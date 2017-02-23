@@ -125,8 +125,8 @@ body {font-family: Helvetica, sans-serif;background-color: #000;}
 
 .oppenned .sub-menu {
   opacity: 1;
-  height: 570px;
-  width: 570px;
+  height: 600px;
+  width: 600px;
 }
 .oppenned span:nth-child(2) {
   overflow: visible;
@@ -141,8 +141,8 @@ body {font-family: Helvetica, sans-serif;background-color: #000;}
           transform: rotate(45deg) translateY(12px) translateX(12px);
 }
 .oppenned span:nth-child(2) {
-  height: 560px;
-  width: 560px;
+  height: 580px;
+  width: 580px;
   right: -160px;
   top: -160px;
   border-radius: 50%;
