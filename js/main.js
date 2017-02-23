@@ -22,15 +22,16 @@
       }); 
   	})
 
-
-  $(document).ready(function() {
-  $(".rippler").rippler({
-    effectClass      :  'rippler-effect'
-    ,effectSize      :  16      // Default size (width & height)
-    ,addElement      :  'div'   // e.g. 'svg'(feature)
-    ,duration        :  400
-  });
-});
+  if($(window).width()>768) {
+	  $(document).ready(function() {
+	  $(".rippler").rippler({
+	    effectClass      :  'rippler-effect'
+	    ,effectSize      :  16      // Default size (width & height)
+	    ,addElement      :  'div'   // e.g. 'svg'(feature)
+	    ,duration        :  400
+	  });
+	});
+}
   	/*---------------------------------------------------- */
 	/* FitVids
 	------------------------------------------------------ */ 
@@ -298,6 +299,8 @@
 				event.stopPropagation();
 			});
         });
+
+
  
 
 })(jQuery);
