@@ -22,7 +22,8 @@
       }); 
   	})
 
-
+/* Rippler effect*/
+if($(window).width()>768) {
   $(document).ready(function() {
   $(".rippler").rippler({
     effectClass      :  'rippler-effect'
@@ -31,6 +32,9 @@
     ,duration        :  400
   });
 });
+}
+
+//$(<element>).removeClass()  
   	/*---------------------------------------------------- */
 	/* FitVids
 	------------------------------------------------------ */ 
