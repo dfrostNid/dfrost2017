@@ -286,7 +286,9 @@
 	
     $(document).ready(function()
         {
-            addLogoMovement();
+        	if($(window).width()>768) {
+            	addLogoMovement();
+        	}
             $(document).delegate('.open', 'click', function(event){
 				$(this).addClass('oppenned');
 				event.stopPropagation();
