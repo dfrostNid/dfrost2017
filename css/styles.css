@@ -158,7 +158,7 @@ body {
   right: 0;
   top: 0;
   position: absolute;
-  background-color: rgba(38, 84, 133, 0.54);
+  background-color: rgba(33, 178, 160, 0.06);
   border-radius: 50%;
   z-index: 23;
   overflow: hidden;
@@ -202,8 +202,8 @@ body {
 
 .oppenned .sub-menu {
   opacity: 1;
-  height: 400px;
-  width: 400px;
+  height: 570px;
+  width: 570px;
 }
 .oppenned span:nth-child(2) {
   overflow: visible;
@@ -218,12 +218,12 @@ body {
           transform: rotate(45deg) translateY(12px) translateX(12px);
 }
 .oppenned span:nth-child(2) {
-  height: 400px;
-  width: 400px;
+  height: 560px;
+  width: 560px;
   right: -160px;
   top: -160px;
   border-radius: 50%;
-  background-color: rgba(38, 84, 133, 0.54);
+  background-color: rgba(66, 215, 177, 0.05);
 }
 .oppenned span:nth-child(3) {
   -webkit-transform: rotate(-45deg) translateY(-10px) translateX(10px);
