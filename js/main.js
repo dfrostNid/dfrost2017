@@ -240,7 +240,8 @@
             }
         }
 	)
-	 	function addLogoMovement()
+	
+	function addLogoMovement()
     {
         var logoBackHolder = document.getElementById('logo_back');
         var logoMidHolder = document.getElementById('logo_mid');
@@ -280,11 +281,22 @@
             })
         
         }
-        
+
 	
     $(document).ready(function()
         {
             addLogoMovement();
+            $(document).delegate('.open', 'click', function(event){
+				$(this).addClass('oppenned');
+				event.stopPropagation();
+			})
+			$(document).delegate('body', 'click', function(event) {
+				$('.open').removeClass('oppenned');
+			})
+			$(document).delegate('.cls', 'click', function(event){
+				$('.open').removeClass('oppenned');
+				event.stopPropagation();
+			});
         });
  
 
