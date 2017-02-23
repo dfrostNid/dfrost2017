@@ -20,9 +20,13 @@ table {border-collapse: collapse;border-spacing: 0;}
 
 
 body {
+<<<<<<< HEAD
 	overflow: hidden !important;
 =======
 /*general Body Font*/
+=======
+  font-family: 'Open Sans', sans-serif
+>>>>>>> origin/gh-pages
 }
 /*NAVBAR CSS BEGINS*/
 #topbar{position:fixed;top:0;display:block;float:none;width:100%;height:auto;background: none;z-index:10;/*border:1px solid yellow;*/}

@@ -22,6 +22,7 @@
       }); 
   	})
 
+
 /* Rippler effect*/
 if($(window).width()>768) {
   $(document).ready(function() {
@@ -33,8 +34,6 @@ if($(window).width()>768) {
   });
 });
 }
-
-//$(<element>).removeClass()  
   	/*---------------------------------------------------- */
 	/* FitVids
 	------------------------------------------------------ */ 
@@ -289,7 +288,9 @@ if($(window).width()>768) {
 	
     $(document).ready(function()
         {
-            addLogoMovement();
+        	if($(window).width()>768) {
+            	addLogoMovement();
+        	}
             $(document).delegate('.open', 'click', function(event){
 				$(this).addClass('oppenned');
 				event.stopPropagation();
@@ -302,6 +303,8 @@ if($(window).width()>768) {
 				event.stopPropagation();
 			});
         });
+
+
  
 
 })(jQuery);
