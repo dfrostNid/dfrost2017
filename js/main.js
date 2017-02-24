@@ -293,13 +293,15 @@ if($(window).width()>768) {
         	
             $(document).delegate('.open', 'click', function(event){
 				$(this).addClass('oppenned');
+				$(this).attr('id','close');
 				event.stopPropagation();
 			})
 			$(document).delegate('body', 'click', function(event) {
 				$('.open').removeClass('oppenned');
 			})
-			$(document).delegate('.cls', 'click', function(event){
+			$(document).delegate('#close', 'click', function(event){
 				$('.open').removeClass('oppenned');
+				$('.open').removeAttr('id');
 				event.stopPropagation();
 			});
         });
