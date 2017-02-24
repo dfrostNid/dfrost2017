@@ -113,6 +113,22 @@ body {font-family: Helvetica, sans-serif;background-color: #000;}
 .sub-menu li:nth-child(5) {
   -webkit-transition-delay: 0.25s;
 }
+.sub-menu li:nth-child(6) {
+  -webkit-transition-delay: 0.35s;
+}
+.sub-menu li:nth-child(7) {
+  -webkit-transition-delay: 0.35s;
+}
+.sub-menu li:nth-child(8) {
+  -webkit-transition-delay: 0.40s;
+}
+.sub-menu li:nth-child(9) {
+  -webkit-transition-delay: 0.45s;
+}
+.sub-menu li:nth-child(10) {
+  -webkit-transition-delay: 0.50s;
+}
+
 .sub-menu li a {
   color: #fff;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
