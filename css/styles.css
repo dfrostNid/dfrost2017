@@ -72,9 +72,9 @@ body {font-family: Helvetica, sans-serif;background-color: #000;}
 
 /* DFrost Logo css */
 .logo-wrapper {display: block; float:left; height: 500px; width: 100%; border: 1px solid #17ffdd; }
-.logo-wrapper #logo_back {display:block;float: left;position: absolute; z-index: 8; background: url("../img/layer1.png") no-repeat 10px 10px/40%;top: 70px; left: 40%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 1s;   -webkit-animation-duration: 1s;   animation-duration: 1s;}
-.logo-wrapper #logo_mid {display:block;float: left;position: absolute; z-index: 9; background: url("../img/layer2.png") no-repeat 10px 10px/40%;top: 70px; left: 40%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 2s;   -webkit-animation-duration: 2s;   animation-duration: 2s;}
-.logo-wrapper #logo_front {display:block;float: left;position: absolute; z-index: 10; background: url("../img/layer3.png") no-repeat 10px 10px/40%;top: 70px; left: 40%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 3s;  -webkit-animation-duration: 3s;   animation-duration: 3s;}
+.logo-wrapper #logo_back {display:block;float: left;position: absolute; z-index: 8; background: url("../img/layer1.svg") no-repeat 10px 10px/40%;top: 70px; left: 40%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 1s;   -webkit-animation-duration: 1s;   animation-duration: 1s;}
+.logo-wrapper #logo_mid {display:block;float: left;position: absolute; z-index: 9; background: url("../img/layer2.svg") no-repeat 10px 10px/40%;top: 70px; left: 40%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 2s;   -webkit-animation-duration: 2s;   animation-duration: 2s;}
+.logo-wrapper #logo_front {display:block;float: left;position: absolute; z-index: 10; background: url("../img/layer3.svg") no-repeat 10px 10px/40%;top: 70px; left: 40%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 3s;  -webkit-animation-duration: 3s;   animation-duration: 3s;}
 
 /*Menu elements start here*/
 
