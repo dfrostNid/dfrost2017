@@ -25,7 +25,7 @@ body {font-family: Helvetica, sans-serif;background-color: #000;}
 #topbar{position:fixed;top:0;display:block;float:none;width:100%;height:auto;background: none;z-index:10;/*border:1px solid yellow;*/}
 #bottombar{position:absolute;bottom:0;display:block;width:100%;height:75px;background-color:#000;z-index:10;}
 .nidlogo{display:block;float:left;margin:20px 0 20px 20px;width:25%;height:30px;z-index:20;background:url(../img/NID_white_logo.png) no-repeat center;}
-.register_now{display:block;float:left;height: auto;margin:20px 0;width:100%;z-index:11;text-align: center}
+.register_now{position: relative; display:block;float:left;height: auto;margin:20px 0;width:100%;z-index:11;text-align: center}
 .register_now h4.white{color:#fff;bottom:10px;text-align:right;}
 .register_now .btn {border: 1px solid #982cff; color: #17ffdd !important; font-size: 14px; padding: 10px 20px; margin: 0 !important; text-decoration: none; vertical-align: middle;}
 .register_now .btn:hover {background: #17ffdd;color: #982cff !important;}
@@ -71,10 +71,10 @@ body {font-family: Helvetica, sans-serif;background-color: #000;}
 }
 
 /* DFrost Logo css */
-.logo-wrapper {display: block; float:left; height: 500px; width: 100%; /*border: 1px solid #17ffdd; */}
-.logo-wrapper #logo_back {display:block;float: left;position: absolute; z-index: 8; background: url("../img/layer1.svg") no-repeat 10px 10px/30%;top: 50px; left: 45%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 1s;   -webkit-animation-duration: 1s;   animation-duration: 1s;}
-.logo-wrapper #logo_mid {display:block;float: left;position: absolute; z-index: 9; background: url("../img/layer2.svg") no-repeat 10px 10px/30%;top: 50px; left: 45%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 2s;   -webkit-animation-duration: 2s;   animation-duration: 2s;}
-.logo-wrapper #logo_front {display:block;float: left;position: absolute; z-index: 10; background: url("../img/layer3.svg") no-repeat 10px 10px/30%;top: 50px; left: 45%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 3s;  -webkit-animation-duration: 3s;   animation-duration: 3s;}
+.logo-wrapper {display: block; float:left; height: 500px; width: 100%; /*border: 1px solid #17ffdd;*/ }
+.logo-wrapper #logo_back {display:block;float: left;position: absolute; z-index: 8; background: url("../img/layer1.svg") no-repeat 10px 10px/30%;top: 0px; left: 45%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 1s;   -webkit-animation-duration: 1s;   animation-duration: 1s;}
+.logo-wrapper #logo_mid {display:block;float: left;position: absolute; z-index: 9; background: url("../img/layer2.svg") no-repeat 10px 10px/30%;top: 0px; left: 45%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 2s;   -webkit-animation-duration: 2s;   animation-duration: 2s;}
+.logo-wrapper #logo_front {display:block;float: left;position: absolute; z-index: 10; background: url("../img/layer3.svg") no-repeat 10px 10px/30%;top: 0px; left: 45%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 3s;  -webkit-animation-duration: 3s;   animation-duration: 3s;}
 
 /*Menu elements start here*/
 
@@ -218,7 +218,7 @@ body {font-family: Helvetica, sans-serif;background-color: #000;}
 
 /* Date Venue Schedule */
 .date_venue_schedule, .date_venue_schedule .date, .date_venue_schedule .venue, .date_venue_schedule .schedule{display: block;float: left;}
-.date_venue_schedule{width: 100%;height: auto;z-index: 200000;}
+.date_venue_schedule{position: relative; width: 100%;height: auto;z-index: 100;}
 .date_venue_schedule .date, .date_venue_schedule .venue, .date_venue_schedule .schedule{width: 30%;height: 100px;margin: 20px;border: 1px solid #17ffdd;color: #fff;
 text-align: center;}
 

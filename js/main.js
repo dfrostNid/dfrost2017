@@ -270,16 +270,16 @@ if($(window).width()>768) {
                 var midX = -(parseInt((x / middleX) * offsetMid)), midY = -(parseInt((y / middleY) * offsetMid));
                 var bigX = -(parseInt((x / middleX) * offsetBig)), bigY = -(parseInt((y / middleY) * offsetBig));
             
-                var logoBackX = -100 + tinyX;
+                var logoBackX = -120 + tinyX;
                 var logoBackY = 100 + tinyY;
-				var logoMidX = -100 + midX; 	
+				var logoMidX = -120 + midX; 	
 				var logoMidY = 100 + midY;
-                var logoFrontX = -100 + bigX; 	
+                var logoFrontX = -120 + bigX; 	
                 var logoFrontY = 100 + bigY;
 
                 TweenMax.to(logo_back,1,{marginLeft:logoBackX,top:logoBackY,ease:Expo.easeOut});
-                TweenMax.to(logo_mid,1,{marginLeft:logoMidX,top:logoMidY,ease:Expo.easeOut});
-                TweenMax.to(logo_front,1,{marginLeft:logoFrontX,top:logoFrontY,ease:Expo.easeOut});
+                TweenMax.to(logo_mid,1,{marginLeft:logoMidX,top:logoBackY,ease:Expo.easeOut});
+                TweenMax.to(logo_front,1,{marginLeft:logoFrontX,top:logoBackY,ease:Expo.easeOut});
                                
             })
         
@@ -293,15 +293,15 @@ if($(window).width()>768) {
         	
             $(document).delegate('.open', 'click', function(event){
 				$(this).addClass('oppenned');
-				$(this).attr('id','close');
+				//$(this).attr('id','close');
 				event.stopPropagation();
 			})
 			$(document).delegate('body', 'click', function(event) {
 				$('.open').removeClass('oppenned');
 			})
-			$(document).delegate('#close', 'click', function(event){
+			$(document).delegate('#cls', 'click', function(event){
 				$('.open').removeClass('oppenned');
-				$('.open').removeAttr('id');
+				//$('.open').removeAttr('id');
 				event.stopPropagation();
 			});
         });
