@@ -67,6 +67,18 @@ if($(window).width()>768) {
 	   proximity: 10
 	}); 
 
+	/*function resize_canvas(){
+            canvas = document.getElementsByClassName("home-particles");
+            if (canvas.width  < window.innerWidth)
+            {
+                canvas.width  = window.innerWidth;
+            }
+
+            if (canvas.height < window.innerHeight)
+            {
+                canvas.height = window.innerHeight;
+            }
+        }*/
 
 	/*-----------------------------------------------------*/
 	/* tabs
