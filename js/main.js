@@ -322,3 +322,15 @@ if($(window).width()>768) {
  
 
 })(jQuery);
+
+
+
+
+
+/*One Page Navigation JQuery*/
+$(document).ready(function($) {
+ 
+  // Hook up the current state to the nav bar
+  $('.page-navigation').onePageNav();
+  
+});
