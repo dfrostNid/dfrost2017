@@ -78,7 +78,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .home .options .date, .home .options .venue, .home .options .schedule{display: block;float: left;width: 33.33%; height: auto;}
 .home .options .date a, .home .options .venue a, .home .options .schedule a{display: block;float: left;width: 100%;height: auto;color: #fff;cursor: pointer;}
 .home .options .date a i, .home .options .venue a i, .home .options .schedule a i{font-size: 4em;width: 100%;margin-bottom: 25px;color: #982cff;}
-.home .options .date a span, .home .options .venue a span, .home .options .schedule a span{width: 100%;text-align: center;}
+.home .options .date a span, .home .options .venue a span, .home .options .schedule a span{width: 100%;text-align: center;font-size: 1.2em;font-weight: 50%;}
 #home .shadow-overlay {position: absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: .9;
   background: -moz-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* FF3.6-15 */
   background: -webkit-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* Chrome10-25,Safari5.1-6 */
@@ -110,7 +110,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 
 
 /*About Section*/
-.content_wrapper .about{display: block;float: left;background:url(../img/bg/backgrounds-01.jpg) no-repeat center/cover;height: auto;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .about{display: block;float: left;background:url(../img/bg/backgrounds-01.jpg) no-repeat center/cover; box-shadow: inset 0 0 0 1000px rgba(152,44,255,0.1); height: auto;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .about .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .about .cnt{display: block;float: left;width: 37%;height: auto;}
 .content_wrapper .about .cnt p{display:block;float: left;font-size: 0.8em;line-height: 1.8em;color: #999;padding: 30px 0 0 0;}
@@ -118,42 +118,42 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .about .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
 /*Schedule Section css*/
-.content_wrapper .schdl{display: block;float: left;background:url(../img/bg/backgrounds-02.jpg) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .schdl{display: block;float: left;background:url(../img/bg/backgrounds-02.jpg) no-repeat center/cover; box-shadow: inset 0 0 0 1000px rgba(23,255,221,0.1); height: 700px;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .schdl .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .schdl .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
 /*Speakers Section css*/
-.content_wrapper .speakers{display: block;float: left;background:url(../img/bg/backgrounds-03.jpg) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .speakers{display: block;float: left;background:url(../img/bg/backgrounds-03.jpg) no-repeat center/cover; box-shadow: inset 0 0 0 1000px rgba(255,0,195,0.1); height: 700px;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .speakers .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .speakers .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
 /*Workshops css*/
-.content_wrapper .workshops{display: block;float: left;background:url(../img/bg/backgrounds-05.jpg) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .workshops{display: block;float: left;background:url(../img/bg/backgrounds-05.jpg) no-repeat center/cover; box-shadow: inset 0 0 0 1000px rgba(152,44,255,0.1); height: 700px;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .workshops .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .workshops .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
 /*Competitions Section css*/
-.content_wrapper .competitions{display: block;float: left;background:url(../img/bg/backgrounds-07.jpg) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .competitions{display: block;float: left;background:url(../img/bg/backgrounds-07.jpg) no-repeat center/cover; box-shadow: inset 0 0 0 1000px rgba(255,0,195,0.1); height: 700px;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .competitions .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .competitions .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
 /*Extras Section css*/
-.content_wrapper .extras{display: block;float: left;background:url(../img/bg/backgrounds-08.jpg) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .extras{display: block;float: left;background:url(../img/bg/backgrounds-08.jpg) no-repeat center/cover; box-shadow: inset 0 0 0 1000px rgba(23,255,221,0.1); height: 700px;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .extras .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .extras .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
 /*Partners Section css*/
-.content_wrapper .partners{display: block;float: left;background:url(../img/bg/backgrounds-09.jpg) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .partners{display: block;float: left;background:url(../img/bg/backgrounds-09.jpg) no-repeat center/cover; box-shadow: inset 0 0 0 1000px rgba(152,44,255,0.1); height: 700px;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .partners .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .partners .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
 /*Venue Section css*/
-.content_wrapper .venue_sec{display: block;float: left;background:url(../img/bg/backgrounds-10.jpg) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .venue_sec{display: block;float: left;background:url(../img/bg/backgrounds-10.jpg) no-repeat center/cover; box-shadow: inset 0 0 0 1000px rgba(255,0,195,0.1); height: 700px;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .venue_sec .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .venue_sec .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
 /*Contact Section css*/
-.content_wrapper .contact{display: block;float: left;background:url(../img/bg/backgrounds-06.jpg) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .contact{display: block;float: left;background:url(../img/bg/backgrounds-06.jpg) no-repeat center/cover; box-shadow: inset 0 0 0 1000px rgba(23,255,221,0.1); height: 700px;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .contact .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .contact .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
@@ -166,6 +166,8 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .main_footer .social_wrap ul li a:hover i{color:#17ffdd;}
 .main_footer .social_wrap ul{display: block;}
 .main_footer .social_wrap ul li{display: inline-block;width: 18%;}
+
+body a:hover{text-decoration: none;}
 
 
 /******************* Responsive css Begins ******************/
