@@ -20,7 +20,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 
 /*Genearl Body CSS*/
 body {font-family: 'Roboto', sans-serif; background-color: #000;color: #fff;border: none !important;}
-body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper .about, .content_wrapper .schdl, .content_wrapper .speakers, .content_wrapper .workshops, .content_wrapper .competitions, .content_wrapper .extras, .content_wrapper .partners, .content_wrapper .venue_sec, .content_wrapper .contact{width: 100%; height: auto;border: 1px solid #333;display: block;}
+body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper .about, .content_wrapper .schdl, .content_wrapper .speakers, .content_wrapper .workshops, .content_wrapper .competitions, .content_wrapper .extras, .content_wrapper .partners, .content_wrapper .venue_sec, .content_wrapper .contact{width: 100%; height: auto;border: none;display: block;}
 
 
 /*Header Navigation Css*/
@@ -110,7 +110,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 
 
 /*About Section*/
-.content_wrapper .about{display: block;float: left;background:url(../img/bg_about.png) no-repeat center/cover;height: auto;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .about{display: block;float: left;background:url(../img/bg/backgrounds-01.jpg) no-repeat center/cover;height: auto;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .about .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .about .cnt{display: block;float: left;width: 37%;height: auto;}
 .content_wrapper .about .cnt p{display:block;float: left;font-size: 0.8em;line-height: 1.8em;color: #999;padding: 30px 0 0 0;}
@@ -118,42 +118,42 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .about .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
 /*Schedule Section css*/
-.content_wrapper .schdl{display: block;float: left;background:url(../img/bg_schedule.png) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .schdl{display: block;float: left;background:url(../img/bg/backgrounds-02.jpg) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .schdl .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .schdl .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
 /*Speakers Section css*/
-.content_wrapper .speakers{display: block;float: left;background:url(../img/bg_schedule.png) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .speakers{display: block;float: left;background:url(../img/bg/backgrounds-03.jpg) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .speakers .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .speakers .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
 /*Workshops css*/
-.content_wrapper .workshops{display: block;float: left;background:url(../img/bg_schedule.png) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .workshops{display: block;float: left;background:url(../img/bg/backgrounds-05.jpg) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .workshops .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .workshops .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
 /*Competitions Section css*/
-.content_wrapper .competitions{display: block;float: left;background:url(../img/bg_schedule.png) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .competitions{display: block;float: left;background:url(../img/bg/backgrounds-07.jpg) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .competitions .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .competitions .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
 /*Extras Section css*/
-.content_wrapper .extras{display: block;float: left;background:url(../img/bg_schedule.png) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .extras{display: block;float: left;background:url(../img/bg/backgrounds-08.jpg) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .extras .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .extras .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
 /*Partners Section css*/
-.content_wrapper .partners{display: block;float: left;background:url(../img/bg_schedule.png) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .partners{display: block;float: left;background:url(../img/bg/backgrounds-09.jpg) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .partners .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .partners .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
 /*Venue Section css*/
-.content_wrapper .venue_sec{display: block;float: left;background:url(../img/bg_schedule.png) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .venue_sec{display: block;float: left;background:url(../img/bg/backgrounds-10.jpg) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .venue_sec .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .venue_sec .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
 /*Contact Section css*/
-.content_wrapper .contact{display: block;float: left;background:url(../img/bg_schedule.png) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
+.content_wrapper .contact{display: block;float: left;background:url(../img/bg/backgrounds-06.jpg) no-repeat center/cover;height: 700px;width: 100%;padding: 100px 100px 50px;}
 .content_wrapper .contact .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .contact .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
