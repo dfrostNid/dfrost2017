@@ -39,7 +39,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .open span:nth-child(1) {margin-top: 10px;z-index: 19;}
 .open span:nth-child(2) {margin-top: 20px;z-index: 19;}
 .open span:nth-child(3) {margin-top: 30px;z-index: 19;}
-.sub-menu {-webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);height: 0;width: 0;right: 0;top: 20px;position: absolute;background-color: rgba(255, 0, 195, 0.3);border-radius: 50%;z-index: 23;overflow: hidden;}
+.sub-menu {-webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);height: 0;width: 0;right: 0;top: 20px;position: absolute;background-color: rgba(152, 44, 255);border-radius: 50%;z-index: 23;overflow: hidden;}
 .sub-menu li {display: block;float: right;clear: both;height: auto;margin-right: -160px;-webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);}
 .sub-menu li:first-child {margin-top: 190px;}
 .sub-menu li:nth-child(1) {-webkit-transition-delay: 0.05s;}
@@ -107,7 +107,9 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .home .logo_container #logo_back {display:block;float: left;position: absolute; z-index: 8; background: url("../img/layer1.svg") no-repeat 10px 10px/30%;top: 80px; left: 45%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 1s;   -webkit-animation-duration: 1s;   animation-duration: 1s;}
 .home .logo_container #logo_mid {display:block;float: left;position: absolute; z-index: 9; background: url("../img/layer2.svg") no-repeat 10px 10px/30%;top: 80px; left: 45%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 2s;   -webkit-animation-duration: 2s;   animation-duration: 2s;}
 .home .logo_container #logo_front {display:block;float: left;position: absolute; z-index: 10; background: url("../img/layer3.svg") no-repeat 10px 10px/30%;top: 80px; left: 45%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 3s;  -webkit-animation-duration: 3s;   animation-duration: 3s;}
-
+.home #calendar {background: url("../img/icons/calendar.svg") no-repeat}
+.home #venue {background: url("../img/icons/location.svg") no-repeat}
+.home #schedule {background: url("../img/icons/schedule.svg") no-repeat}
 
 /*About Section*/
 .content_wrapper .about{display: block;float: left;background:url(../img/bg/backgrounds-01.jpg) no-repeat center/cover; box-shadow: inset 0 0 0 1000px rgba(152,44,255,0.1); height: auto;width: 100%;padding: 100px 100px 50px;}
