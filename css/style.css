@@ -173,6 +173,84 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .main_footer .social_wrap ul{display: block;}
 .main_footer .social_wrap ul li{display: inline-block;width: 18%;}
 
+/*fadeInup class for background set*/
+.revealOnScroll {
+  opacity: 0;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(60px) translateX(60px);
+    transform: translateY(60px) translateX(60px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) translateX(0px);
+    transform: translateY(0) translateX(0px);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(60px) translateX(60px);
+    -ms-transform: translateY(60px) translateX(60px);
+    transform: translateY(60px) translateX(60px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) translateX(0px);
+    -ms-transform: translateY(0) translateX(0px);
+    transform: translateY(0) translateX(0px);
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+/******FADEIN UP END****/
+
+/******FADEIN DOWN START****/
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-60px) translateX(-60px);
+    transform: translateY(-60px) translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-60px) translateX(-60px);
+    -ms-transform: translateY(-60px) translateX(-60px);
+    transform: translateY(-60px) translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) translateX(0);
+    -ms-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+  }
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+/******FADEIN DOWN END****/
+
 body a:hover{text-decoration: none;}
 
 
