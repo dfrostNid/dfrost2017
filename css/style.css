@@ -95,7 +95,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 #home.home-particles .pg-canvas {position: absolute;top: 0;left: 0;height: 100% !important;width: 100% !important;opacity: .50;background: url('../img/star_tiny.png') no-repeat center/ cover;z-index: 1 !important;}
 #home.home-particles .shadow-overlay {display: none;}
 #home.home-slides {height: 100% !important;}
-#menu_content {rotate:transform(10deg); float: right;}
+#menu_content {transform:rotate(15deg); float: right;}
 
 @-webkit-keyframes vertical {
   0%, 60%, 80%, 100% {-webkit-transform: translateY(0);}
