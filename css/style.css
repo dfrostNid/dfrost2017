@@ -219,7 +219,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .contact .section_icon .ico{display: block;float: left;width: 120px;height: auto;}
 
 /*Footer css*/
-.main_footer{display: block;float: left;width: 100%;padding: 30px 100px;height: auto;background: #212130;color: #8d8d8d;border: none;}
+.main_footer{display: block;float: left;width: 100%;padding: 30px 100px;height: auto;background: #141414;color: #8d8d8d;border: none;}
 .main_footer .social_wrap, .main_footer .footer_content{display: block;float: left;}
 .main_footer .footer_content{width: 85%;height: auto;}
 .main_footer .social_wrap{width: 15%;height: auto;}
