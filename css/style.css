@@ -2,6 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@font-face { font-family: 'Gotham'; src: url('../fonts/gotham-black.ttf'); } 
+
+
 
 /*RESET CSS BEGINS*/
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,
@@ -95,7 +98,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 #home.home-particles .pg-canvas {position: absolute;top: 0;left: 0;height: 100% !important;width: 100% !important;opacity: .50;background: url('../img/star_tiny.png') no-repeat center/ cover;z-index: 1 !important;}
 #home.home-particles .shadow-overlay {display: none;}
 #home.home-slides {height: 100% !important;}
-#menu_content {transform:rotate(15deg); float: right; margin-right: 15px}
+#menu_content {transform:rotate(15deg); float: right; margin-right: 15px;}
 
 @-webkit-keyframes vertical {
   0%, 60%, 80%, 100% {-webkit-transform: translateY(0);}
@@ -128,20 +131,38 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 /*About Section*/
 .content_wrapper .about{display: block;float: left; height: 20%;width: 100%;}
 .content_wrapper .about .about_cutout{display: block;float: left;background:url(../img/Final_backgrounds/About-Holder.png) no-repeat center/100%; width: 62%;height: 100%;position: relative;left: 0; padding: 200px 70px 70px;}
-.content_wrapper .about .about_cutout h2{display:block;float: left;font-size: 3em;color: #FF00C3;width: 100%;margin-bottom: 20px;}
+.content_wrapper .about .about_cutout h2{display:block;float: left;font-size: 3em;color: #FF00C3;width: 100%;margin-bottom: 20px;font-family: 'Gotham';}
 .content_wrapper .about .about_cutout p{display:block;float: left;font-size: 1em;line-height: 1.6em;color: #999;width: 500px;margin-bottom: 20px;text-align: justify;}
 
-/*.content_wrapper .about .section_icon{display: block;float: left;width: 62%;height: auto;}
-.content_wrapper .about .cnt{display: block;float: left;width: 37%;height: auto;}
-.content_wrapper .about .cnt p{display:block;float: left;font-size: 0.8em;line-height: 1.8em;color: #999;padding: 30px 0 0 0;}
-.content_wrapper .about .cnt h2{display:block;float: left;font-size: 1.4em;}
-.content_wrapper .about .section_icon .ico{display: block;float: left;width: 100%;height: 100%;}*/
 
 /*Schedule Section css*/
 .content_wrapper .schdl{display: block;float: left;height: 40%;width: 100%;}
 .content_wrapper .schdl .schdl_cutout1{display: block;float: right;background:url(../img/Final_backgrounds/Schedule-Holder.png) no-repeat center top/100%; width: 38%;height: 100%;position: relative;top: 0;right: 0;padding: 315px 73px 0 160px;}
 .content_wrapper .schdl .schdl_cutout2{display: block;float: left;background:url(../img/Final_backgrounds/Schedule-Day2-Holder.png) no-repeat center bottom/100%; width: 67%;height: 100%;position: relative;left: 0;top: -1440px;}
-.content_wrapper .schdl .schdl_cutout1 h2{display:block;float: left;font-size: 3em;color: #FFFFFF;width: 100%;text-align: right;}
+.content_wrapper .schdl .schdl_cutout1 h2{display:block;float: left;font-size: 3em;color: #FFFFFF;width: 100%;text-align: right;font-family: 'Gotham';}
+.content_wrapper .schdl .day1{display: block;float: left;margin: 100px 0 0 70px;}
+.content_wrapper .schdl .day1 h3{display: block;float: left;font-family: 'Gotham';font-size:3em;color: #FF00C3;width: 100%;margin-bottom: 40px;}
+.content_wrapper .schdl .schdl_cutout2 .day2{display: block;float: left;position: relative;top: 720px;color: #141414;margin: 100px 0 0 70px;}
+.content_wrapper .schdl .schdl_cutout2 .day2 h3{display: block;float: left;font-family: 'Gotham';font-size:3em;color: #141414;width: 100%;margin-bottom: 40px;}
+.content_wrapper .schdl .download_schedule{display: block;float: right;position: relative;top: -170px;width: 280px;text-align: center;margin-right: 70px;}
+.content_wrapper .schdl .download_schedule a{font-size: 1.4em;display: block;float: right;width: 100%;padding: 10px;border: 1px solid;border-style: dashed;line-height: 1.4em;border-radius: 8px;color:rgba(255,255,255, 0.7);cursor: pointer;}
+.content_wrapper .schdl .download_schedule a:hover{color:rgba(255,255,255, 0.88);}
+.content_wrapper .schdl .sub_hd .left{font-size: 2em;font-weight: bold;}
+.content_wrapper .schdl .sub_hd .sep{font-size: 2em;font-weight: bold;padding: 0 6px;}
+.content_wrapper .schdl .day1 .event_ls .low{font-style: italic;color:rgba(255,255,255, 0.7);}
+.content_wrapper .schdl .day2 .event_ls .low{font-style: italic;color:rgba(0,0,0, 0.7);}
+.content_wrapper .schdl .day1 .sub_hd, .content_wrapper .schdl .day1 .event_ls .time{color: #00FFE2;}
+.content_wrapper .schdl .day2 .sub_hd, .content_wrapper .schdl .day2 .event_ls .time{color: #FF00C3;}
+.content_wrapper .schdl .day1 .schdl_cnt, .content_wrapper .schdl .day2 .schdl_cnt{margin-bottom: 30px;}
+.content_wrapper .schdl .day1 .sub_hd, .content_wrapper .schdl .day2 .sub_hd{margin-bottom: 20px;}
+.content_wrapper .schdl .day1 .event_ls .time, .content_wrapper .schdl .day2 .event_ls .time{margin-right: 20px;}
+.content_wrapper .schdl .day1 .event_ls .high, .content_wrapper .schdl .day2 .event_ls .high{margin-right: 10px;display: inline-block;}
+.content_wrapper .schdl .day1 .event_ls, .content_wrapper .schdl .day2 .event_ls{line-height: 1.4em;}
+.content_wrapper .schdl .event_ls .lab{width: 135px;}
+.content_wrapper .schdl .event_ls .tlk{width: 95px;}
+.content_wrapper .schdl .event_ls .evt{width: 158px;}
+
+
 
 /*
 .content_wrapper .schdl .section_icon{display: block;float: left;width: 15%;height: auto;}
@@ -150,14 +171,16 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 /*Speakers Section css*/
 .content_wrapper .speakers{display: block;float: left;height: 40%;width: 100%;}
 .content_wrapper .speakers .speaker_cutout{display: block;float: left;background:url(../img/Final_backgrounds/dTalks-Holder.png) no-repeat center/100%; width: 47%;height: 100%;position: relative;left: 0;padding: 380px 0 0 170px;}
-.content_wrapper .speakers .speaker_cutout h2{display:block;float: left;font-size: 3em;color: #00FFE2;width: 100%;}
+.content_wrapper .speakers .speaker_cutout h2{display:block;float: left;font-size: 3em;color: #00FFE2;width: 100%;font-family: 'Gotham';}
 .content_wrapper .speakers .first_row, .content_wrapper .speakers .second_row{display: block;float: right;padding-top: 200px;}
 .content_wrapper .speakers .first_row{width: 40%;}
 .content_wrapper .speakers .second_row{width: 58%;position: relative;top: -845px;}
-.content_wrapper .speakers .first_row .speaker{display: block;float: left;width: 200px;text-align: center;margin:0 30px 0 0;}
-.content_wrapper .speakers .second_row .speaker{display: block;float: left;width: 200px;text-align: center;margin:0 30px 0 0;}
+.content_wrapper .speakers .first_row .speaker{display: block;float: left;width: 200px;text-align: center;margin:0 45px 0 0;}
+.content_wrapper .speakers .second_row .speaker{display: block;float: left;width: 200px;text-align: center;margin:0 45px 0 0;}
 .content_wrapper .speakers .speaker img, .content_wrapper .speakers .speaker span.des{display:block;width:100%;height:auto;margin-bottom: 20px;}
 .content_wrapper .speakers .speaker span.des, .content_wrapper .speakers .speaker h4{color: #00FFE2;}
+.content_wrapper .speakers .speaker span.des{font-size: 0.9em;}
+.content_wrapper .speakers .speaker h4{font-size: 1.3em;margin-bottom: 5px;}
 .content_wrapper .speakers .speaker p{display: block;width: 100%;text-align: justify;font-size: 0.8em;line-height: 1.4em;}
 
 /*.content_wrapper .speakers .section_icon{display: block;float: left;width: 15%;height: auto;}
