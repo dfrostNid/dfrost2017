@@ -93,8 +93,8 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
   background: linear-gradient(to right, black 0%, black 20%, transparent 100%);  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=1);  /* IE6-9 */}
 #home .row {max-width: 1290px;}
-#home.home-static {background-image: url(../images/home-bg.jpg) no-repeat center;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;}
-#home.home-particles {overflow: hidden;background: #020507 /*url('../img/star_mid.png') no-repeat center/ 100%*/;}
+#home.home-static {-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;}
+#home.home-particles {overflow: hidden;background: #020507;}
 #home.home-particles .pg-canvas {position: absolute;top: 0;left: 0;height: 100% !important;width: 100% !important;opacity: .50;background: url('../img/star_tiny.png') no-repeat center/ cover;z-index: 1 !important;}
 #home.home-particles .shadow-overlay {display: none;}
 #home.home-slides {height: 100% !important;}
