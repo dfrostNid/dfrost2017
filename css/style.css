@@ -37,7 +37,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .main_header .main_menu p{display: block;float: left;height: 100%;width: 100%;vertical-align: bottom;margin: 10px 0;}
 
 /*Content Wrapper css*/
-.content_wrapper{margin-top: 80px;}
+.content_wrapper{margin-top: 80px;/*max-height: 4500px;*/overflow-y: hidden;}
 
 /*Menu elements start here*/
 
@@ -60,7 +60,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .sub-menu li:nth-child(8) {-webkit-transition-delay: 0.40s;}
 .sub-menu li:nth-child(9) {-webkit-transition-delay: 0.45s;}
 .sub-menu li:nth-child(10) {-webkit-transition-delay: 0.50s;}
-.sub-menu li a {color: #fff;font-family: 'Lato', Arial, Helvetica, sans-serif;font-size: 16px;width: 100%;display: block;float: left;line-height: 55px;}
+.sub-menu li a {color: #fff;font-family: 'Roboto';font-size: 1.2em;width: 100%;display: block;float: left;line-height: 55px;}
 .oppenned .sub-menu {opacity: 1;height: 1000px;width: 600px;}
 .oppenned span:nth-child(2) {overflow: visible;}
 .oppenned span:nth-child(1), .oppenned span:nth-child(3) {z-index: 100;-webkit-transform: rotate(45deg);transform: rotate(45deg);}
@@ -86,7 +86,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .home .options .date, .home .options .venue, .home .options .schedule{display: block;float: left;width: 33.33%; height: auto;}
 .home .options .date a, .home .options .venue a, .home .options .schedule a{display: block;float: left;width: 100%;height: auto;color: #fff;cursor: pointer;}
 .home .options .date a i, .home .options .venue a i, .home .options .schedule a i{font-size: 4em;width: 100%;margin-bottom: 25px;color: #982cff;}
-.home .options .date a span, .home .options .venue a span, .home .options .schedule a span{width: 100%;text-align: center;font-size: 1.2em;font-family: 'gotham-black', sans-serif; font-weight: 700;}
+.home .options .date a span, .home .options .venue a span, .home .options .schedule a span{width: 100%;text-align: center;font-size: 1.3em;font-family: 'Roboto';}
 #home .shadow-overlay {position: absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: .9;
   background: -moz-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* FF3.6-15 */
   background: -webkit-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* Chrome10-25,Safari5.1-6 */
@@ -172,9 +172,11 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .speakers{display: block;float: left;height: 40%;width: 100%;}
 .content_wrapper .speakers .speaker_cutout{display: block;float: left;background:url(../img/Final_backgrounds/dTalks-Holder.png) no-repeat center/100%; width: 47%;height: 100%;position: relative;left: 0;padding: 380px 0 0 170px;}
 .content_wrapper .speakers .speaker_cutout h2{display:block;float: left;font-size: 3em;color: #00FFE2;width: 100%;font-family: 'Gotham';}
-.content_wrapper .speakers .first_row, .content_wrapper .speakers .second_row{display: block;float: right;padding-top: 200px;}
-.content_wrapper .speakers .first_row{width: 40%;}
-.content_wrapper .speakers .second_row{width: 58%;position: relative;top: -845px;}
+.content_wrapper .speakers .first_row, .content_wrapper .speakers .second_row{display: block;float: right;margin-top: 200px;position: relative;top: -1440px;}
+.content_wrapper .speakers .first_row{width: 60%;}
+.content_wrapper .speakers .second_row{width: 60%;}
+.content_wrapper .speakers .first_row > div:nth-child(1){margin-left: 245px;}
+.content_wrapper .speakers .first_row > div:nth-child(3),.content_wrapper .speakers .first_row > div:nth-child(4),.content_wrapper .speakers .first_row > div:nth-child(5){margin-top: 200px;}
 .content_wrapper .speakers .first_row .speaker{display: block;float: left;width: 200px;text-align: center;margin:0 45px 0 0;}
 .content_wrapper .speakers .second_row .speaker{display: block;float: left;width: 200px;text-align: center;margin:0 45px 0 0;}
 .content_wrapper .speakers .speaker img, .content_wrapper .speakers .speaker span.des{display:block;width:100%;height:auto;margin-bottom: 20px;}
