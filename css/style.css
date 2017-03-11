@@ -33,7 +33,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 /*Header Navigation Css*/
 .main_header{float: left;border: 0;background: rgba(0, 0, 0, .5);padding: 20px 100px;position: fixed;top: 0;z-index: 30;border: none;}
 .main_header .nid_logo{display:block;float:left;margin:0;width:40%;height:40px;z-index:20;background: url(../img/NID_white_logo.png) no-repeat left/auto 35px;}
-.main_header .main_menu{display:block;float:left;margin:0;width:60%;height:40px;z-index:20;text-align: right;}
+.main_header .main_menu{display:block;float:left;margin:0;width:60%;height:40px;z-index:20;text-align: right;padding-top: 10px;}
 .main_header .main_menu p{display: block;float: left;height: 100%;width: 100%;vertical-align: bottom;margin: 10px 0;}
 
 /*Content Wrapper css*/
@@ -76,18 +76,37 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .button:hover:before {-webkit-transform: translateY(0);transform: translateY(0);}
 /*Menu elements end here*/
 
+/*Fixed menu CSS*/
+#menu li {
+display: inline;
+padding: 5px;
+}
+#menu a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 8px 8px 8px;
+}
+#menu a:hover{
+    color: #17ffdd;
+}
+/*Fixed menu CSS ends here*/
+
 /*Home Section Css*/
 .content_wrapper .home{display: block;float: left;background:url(../img/star_tiny.png) no-repeat center/cover;height: auto;width: 100%;padding: 10px 100px 50px;position: relative;}
 .home .logo_container, .home .register_btn, .home .options{display: block;float: left;width: 100%;height: auto;border: none;text-align: center;padding: 0 0 40px;}
-.home .register_btn a {border: 1px solid #982cff;color: #17ffdd;font-size: 14px;padding: 10px 20px;margin: 0;text-decoration: none;vertical-align: middle;}
+.home .register_btn a {border: 1px solid #982cff;color: #17ffdd;font-family: 'Gotham';font-size: 24px;padding: 15px 30px;margin: 0;text-decoration: none;vertical-align: middle;}
 .home .register_btn a:hover{background: #17ffdd;color: #982cff;}
-.home .register_btn{border: none;position: relative;z-index: 20;}
+.home .register_btn{border: none;position: relative;z-index: 20;padding: 40px;}
 .home .options{display: block;float: left;width: 100%; height: auto;border: none;position: relative;z-index: 20;}
-.home .options .date, .home .options .venue, .home .options .schedule{display: block;float: left;width: 33.33%; height: auto;}
+/*.home .options .date, .home .options .venue, .home .options .schedule{display: block;float: left;width: 33.33%; height: auto;}
 .home .options .date a, .home .options .venue a, .home .options .schedule a{display: block;float: left;width: 100%;height: auto;color: #fff;cursor: pointer;}
 .home .options .date a i, .home .options .venue a i, .home .options .schedule a i{font-size: 4em;width: 100%;margin-bottom: 25px;color: #982cff;}
 .home .options .date a span, .home .options .venue a span, .home .options .schedule a span{width: 100%;text-align: center;font-size: 1.3em;font-family: 'Roboto';}
-#home .shadow-overlay {position: absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: .9;
+*/
+/*#date, #venue{
+  color: #982cff;
+}*/
+  #home .shadow-overlay {position: absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: .9;
   background: -moz-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* FF3.6-15 */
   background: -webkit-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, black 0%, black 20%, transparent 100%);  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
