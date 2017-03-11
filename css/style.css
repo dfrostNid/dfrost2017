@@ -196,11 +196,15 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
   width: 100%;
 }
 
+.about-content {
+  z-index: 10;
+  position: relative;
+}
+
 .content_wrapper .about .about_cutout .bg-holder {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
   white-space: nowrap;
   height: 720px;
   width: 100%;
@@ -218,7 +222,6 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
   left: 0;
   width: 60%;
   bottom: 0;
-  z-index: -1;
 }
 
 
@@ -239,19 +242,19 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 }
 
 .content_wrapper .schdl .schdl_cutout1{display: block;float: right;/*background:url(../img/Final_backgrounds/Schedule-Holder.png) no-repeat center top/100%;*/ width: 38%;position: relative;top: 0;right: 0;padding: 315px 73px 0 160px;}
-.content_wrapper .schdl .schdl_cutout2{display: block;position: relative;left: 0;}
+.content_wrapper .schdl .schdl_cutout2{position: relative;}
 
-.cutout-2-img {
+.day2-cutout-img {
   position: absolute;
   top: 0;
-  left: -380px;
-  z-index: -1;
+  left: -99px;
+  height: 840px;
 }
 
 .content_wrapper .schdl .schdl_cutout1 h2{display:block;float: left;font-size: 3em;color: #FFFFFF;width: 100%;text-align: right;font-family: 'Gotham';}
 .content_wrapper .schdl .day1{display: block;padding: 100px 0 220px 70px;}
 .content_wrapper .schdl .day1 h3{display: block;font-family: 'Gotham';font-size:3em;color: #FF00C3;width: 100%;margin-bottom: 40px;}
-.content_wrapper .schdl .schdl_cutout2 .day2{display: block;width: 100%;position: relative;color: #141414;padding: 120px 0 60px 70px;}
+.content_wrapper .schdl .schdl_cutout2 .day2{display: block;width: 100%;position: relative;color: #141414;padding: 120px 0 60px 70px; z-index: 10;}
 .content_wrapper .schdl .schdl_cutout2 .day2 h3{display: block;float: left;font-family: 'Gotham';font-size:3em;color: #141414;width: 100%;margin-bottom: 40px;}
 .content_wrapper .schdl .download_schedule{display: block;float: right;position: relative;top: -170px;width: 280px;text-align: center;margin-right: 70px;}
 .content_wrapper .schdl .download_schedule a{font-size: 1.4em;display: block;float: right;width: 100%;padding: 10px;border: 1px solid;border-style: dashed;line-height: 1.4em;border-radius: 8px;color:rgba(255,255,255, 0.7);cursor: pointer;}
@@ -284,7 +287,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .speaker-cutout-img {
   position: absolute;
   top: 0;
-  left: -277px;
+  left: -1257px;
   z-index: -1;
 }
 
