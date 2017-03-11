@@ -292,11 +292,14 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 }
 
 .content_wrapper .speakers .speaker_cutout h2{display:block;float: left;font-size: 3em;color: #00FFE2;width: 100%;font-family: 'Gotham';}
-.content_wrapper .speakers .first_row, .content_wrapper .speakers .second_row{display: block;float: right;margin-top: 200px;position: relative;top: -1440px;}
+.content_wrapper .speakers .first_row, .content_wrapper .speakers .second_row{display: block;float: right;margin-top: 160px;position: relative;top: -1440px;}
 .content_wrapper .speakers .first_row{width: 60%;}
+
+
+
 .content_wrapper .speakers .second_row{width: 60%;}
-.content_wrapper .speakers .first_row > div:nth-child(1){margin-left: 245px;}
-.content_wrapper .speakers .first_row > div:nth-child(3),.content_wrapper .speakers .first_row > div:nth-child(4),.content_wrapper .speakers .first_row > div:nth-child(5){margin-top: 200px;}
+// .content_wrapper .speakers .first_row > div:nth-child(1){margin-left: 245px;}
+// .content_wrapper .speakers .first_row > div:nth-child(3),.content_wrapper .speakers .first_row > div:nth-child(4),.content_wrapper .speakers .first_row > div:nth-child(5){margin-top: 200px;}
 .content_wrapper .speakers .first_row .speaker{display: block;float: left;width: 200px;text-align: center;margin:0 45px 0 0;}
 .content_wrapper .speakers .second_row .speaker{display: block;float: left;width: 200px;text-align: center;margin:0 45px 0 0;}
 .content_wrapper .speakers .speaker img, .content_wrapper .speakers .speaker span.des{display:block;width:100%;height:auto;margin-bottom: 20px;}
@@ -304,6 +307,55 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .speakers .speaker span.des{font-size: 0.9em;}
 .content_wrapper .speakers .speaker h4{font-size: 1.3em;margin-bottom: 5px;}
 .content_wrapper .speakers .speaker p{display: block;width: 100%;text-align: justify;font-size: 0.8em;line-height: 1.4em;}
+
+.content_wrapper .speakers .first_row {
+  text-align: right;
+  margin-right: 100px;
+}
+
+.content_wrapper .speakers .first_row .speaker {
+  display: inline-block;
+  float: none;
+  margin-left: 36px;
+  margin-right: 0;
+  margin-bottom: 48px;
+  width: auto;
+}
+
+.content_wrapper .speakers .first_row .speaker img {
+  max-width: 220px;
+  height: auto;
+  width: 100%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.content_wrapper .speakers .first_row .col {
+  width: 33%;
+  display: inline-block;
+  float: right;
+}
+
+.content_wrapper .speakers .first_row .col p, .content_wrapper .speakers .first_row .col h4, .content_wrapper .speakers .first_row .col span.des {
+  text-align: left; 
+  max-width: 220px;
+}
+
+.content_wrapper .speakers .first_row .col span.des {
+  margin-bottom: 8px;
+}
+
+.content_wrapper .speakers .first_row .col p {
+  line-height: 1.5  ;
+}
+
+.content_wrapper .speakers .first_row .col1 {
+  margin-top: 100px;
+}
+
+.content_wrapper .speakers .first_row .col3 {
+  padding-top: 160px;
+}
 
 /*.content_wrapper .speakers .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .speakers .section_icon .ico{display: block;float: left;width: 100%;height: 100%;}*/
@@ -462,8 +514,8 @@ body a:hover{text-decoration: none;}
 .content_wrapper .speakers .speaker_cutout {padding: 580px 0 0 250px;}
 .content_wrapper .speakers .speaker_cutout h2 {font-size: 4em;}
 .content_wrapper .speakers .first_row, .content_wrapper .speakers .second_row {top: -2180px;}
-.content_wrapper .speakers .first_row > div:nth-child(1) {margin-left: 375px;}
-.content_wrapper .speakers .first_row .speaker {width: 300px;margin: 0 80px 0 0;}
+// .content_wrapper .speakers .first_row > div:nth-child(1) {margin-left: 375px;}
+// .content_wrapper .speakers .first_row .speaker {width: 300px;margin: 0 80px 0 0;}
 .content_wrapper .speakers .speaker h4 {font-size: 2em;margin-bottom: 10px;}
 .content_wrapper .speakers .speaker span.des {font-size: 1.8em;}
 .content_wrapper .speakers .speaker p {font-size: 1.5em;line-height: 1.3em;}
@@ -474,7 +526,15 @@ body a:hover{text-decoration: none;}
 
 
 }
-@media only screen and (max-width:340px) {
-  
-  
+
+@media only screen and (max-width: 1200px) {
+  .day2-cutout-img {
+    left: -240px;
+  }
+  .speaker-cutout-img {
+    left: -1398px;
+  }
+  .content_wrapper .speakers .speaker_cutout {
+    padding: 170px 0 0 100px;
+  }
 }
