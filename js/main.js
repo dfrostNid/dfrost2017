@@ -377,3 +377,18 @@ $(document).ready(function($) {
   $('.page-navigation').onePageNav();
   
 });
+
+//Navbar element underline hide when top is reached
+
+var waypoint = new Waypoint({
+  element: document.getElementById('menu'),
+  handler: function(direction) {    
+    if(direction == 'up') {
+      //notify('Direction: ' + direction)
+      //console.log("working");
+      $('#a').addClass('hidden');
+      console.log("hidden");
+    }
+  }
+})
+

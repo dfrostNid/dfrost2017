@@ -101,6 +101,9 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
   opacity: 0;
   transition: 0.2s ease;
 }
+#menu li a.hidden:after {
+  display: none;
+}
 
 #menu li.current a:after {
   opacity: 0.8;
@@ -181,7 +184,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .about{display: block; height: 20%;width: 100%;}
 .content_wrapper .about .about_cutout{display: block;float: left;/*background:url(../img/Final_backgrounds/About-Holder.png) no-repeat center 0/100%;*/ width: 62%;height: 100%;position: relative;left: 0; padding: 200px 70px 70px;}
 .content_wrapper .about .about_cutout h2{display:block;float: left;font-size: 3em;color: #FF00C3;width: 100%;margin-bottom: 20px;font-family: 'Gotham';}
-.content_wrapper .about .about_cutout p{display:block;/*float: left;*/font-size: 1em;line-height: 1.6em;color: #999;width: 500px;margin-bottom: 20px;text-align: justify;}
+.content_wrapper .about .about_cutout p{display:block;/*float: left;*/font-size: 1em;line-height: 1.6em;color: #999;width: 45%;margin-bottom: 20px;text-align: justify;}
 
 .content_wrapper .about {
   background:url(../img/Final_backgrounds/BG-About.jpg) no-repeat center top/100%;
