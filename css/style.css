@@ -350,11 +350,11 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 }
 
 .content_wrapper .speakers .first_row .col1 {
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 .content_wrapper .speakers .first_row .col3 {
-  padding-top: 160px;
+  padding-top: 180px;
 }
 
 /*.content_wrapper .speakers .section_icon{display: block;float: left;width: 15%;height: auto;}
