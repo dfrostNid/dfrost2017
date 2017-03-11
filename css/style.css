@@ -31,7 +31,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 }
 
 /*Header Navigation Css*/
-.main_header{float: left;border: 0;background: rgba(0, 0, 0, .5);padding: 20px 100px;position: fixed;top: 0;z-index: 30;border: none;}
+.main_header{border: 0;background: rgba(0, 0, 0, .5);padding: 20px 100px;position: fixed;top: 0;z-index: 1200;border: none;}
 .main_header .nid_logo{display:block;float:left;margin:0;width:40%;height:40px;z-index:20;background: url(../img/NID_white_logo.png) no-repeat left/auto 35px;}
 .main_header .main_menu{display:block;float:left;margin:0;width:60%;height:40px;z-index:20;text-align: right;padding-top: 10px;}
 .main_header .main_menu p{display: block;float: left;height: 100%;width: 100%;vertical-align: bottom;margin: 10px 0;}
