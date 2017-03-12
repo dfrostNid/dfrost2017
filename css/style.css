@@ -283,7 +283,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .schdl .section_icon .ico{display: block;float: left;width: 100%;height: 100%;}*/
 
 /*Speakers Section css*/
-.content_wrapper .speakers{display: block;float: left;height: 1440px;width: 100%;}
+.content_wrapper .speakers{display: block;float: left;width: 100%;}
 .content_wrapper .speakers {
   background:url(../img/Final_backgrounds/BG-dTalks.jpg) no-repeat center top/100%;
   background-size: cover; 
@@ -298,7 +298,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 }
 
 .content_wrapper .speakers .speaker_cutout h2{display:block;float: left;font-size: 3em;color: #00FFE2;width: 100%;font-family: 'Gotham';position: relative;z-index: 20;}
-.content_wrapper .speakers .first_row, .content_wrapper .speakers .second_row{display: block;float: right;margin-top: 160px;position: relative;top: -1440px;}
+.content_wrapper .speakers .first_row, .content_wrapper .speakers .second_row{display: block;float: right;margin-top: 160px;position: relative;}
 .content_wrapper .speakers .first_row{width: 60%;}
 
 
@@ -317,6 +317,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .speakers .first_row {
   text-align: right;
   margin-right: 100px;
+  margin-bottom: 120px;
 }
 
 .content_wrapper .speakers .first_row .speaker {
@@ -361,6 +362,14 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 
 .content_wrapper .speakers .first_row .col3 {
   padding-top: 180px;
+}
+
+.content_wrapper .speakers .speaker_cutout {
+  width: auto;
+}
+
+.content_wrapper .speakers {
+  overflow: hidden;
 }
 
 /*.content_wrapper .speakers .section_icon{display: block;float: left;width: 15%;height: auto;}
