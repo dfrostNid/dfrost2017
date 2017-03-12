@@ -180,6 +180,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
   display: block;
   margin: 0 auto;
   z-index: 1000;
+  position: center;
 }
 
 /*.home #calendar {background: url("../img/icons/calendar.svg") no-repeat}
