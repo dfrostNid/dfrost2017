@@ -282,8 +282,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
   background-size: cover; 
 }
 
-
-.content_wrapper .schdl .schdl_cutout1{display: block;float: right;/*background:url(../img/Final_backgrounds/Schedule-Holder.png) no-repeat center top/100%;*/ width: 38%;position: relative;top: 0;right: 0;padding:  235px 7% 0 7%;}
+.content_wrapper .schdl .schdl_cutout1{display: block;float: right;/*background:url(../img/Final_backgrounds/Schedule-Holder.png) no-repeat center top/100%;*/ width: 38%;position: relative;top: 0;right: 0;padding: 315px 73px 0 100px;}
 
 .content_wrapper .schdl .schdl_cutout2{position: relative;}
 
@@ -627,7 +626,7 @@ body a:hover{text-decoration: none;}
 }
 
 @media only screen and (max-width: 992px) {
-  .main_header, .home, .content_wrapper .about .about_cutout, .content_wrapper .about .about_cutout, .content_wrapper .schdl .day1, .content_wrapper .schdl .schdl_cutout2 .day2, .content_wrapper .schdl .schdl_cutout1 {
+  .main_header, .home, .content_wrapper .about .about_cutout, .content_wrapper .about .about_cutout, .content_wrapper .schdl .day1, .content_wrapper .schdl .schdl_cutout2 .day2, .content_wrapper .schdl .schdl_cutout1, .dlabs .dlabs_cnt {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -783,7 +782,7 @@ body a:hover{text-decoration: none;}
     margin-top: 4px;
   }
   .content_wrapper .schdl .day1 .sub_hd {
-    margin-bottom: 14px;
+    // margin-bottom: 14px;
   }
   .content_wrapper .speakers .speaker_cutout {
     padding: 40px 30px;
@@ -838,6 +837,46 @@ body a:hover{text-decoration: none;}
     margin: 0;
     margin-bottom: 20px;
     width: 70%;
+  }
+  .dlabs .dlabs_cnt {
+    width: 100%;
+  }
+  .dlabs .dlabs_cutout_img {
+    display: none;
+  }
+  .dlabs_cut_heading {
+    float: none;
+    padding-top: 48px;
+  }
+  .content_wrapper .dlabs:before {
+    content: '';
+    display: block;
+    width: 120%;
+    height: 160px;
+    background-color: #000;
+    position: absolute;
+    top: -30px;
+    left: -10%;
+    right: -10%;
+    transform: rotate(-9deg);
+  }
+  .content_wrapper .dlabs {
+    height: auto;
+    background: url('../img/Final_backgrounds/4k-solid-overlay.jpg') no-repeat center top/100%;
+    background-size: cover;
+  }
+  .dlabs .dlabs_cnt .day1, .dlabs .dlabs_cnt .day2 {
+    width: auto;
+    background: none;
+    padding: 20px 0;
+    height: auto;
+    z-index: 1000;
+  }
+  .dlabs .dlabs_cnt {
+    position: relative;
+  }
+  .dlabs .dlabs_cnt .day1 h3, .dlabs .dlabs_cnt .day2 h3, .dlabs .dlabs_cnt .day1 p, .dlabs .dlabs_cnt .day2 p {
+    color: white;
   }
 }
 
