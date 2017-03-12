@@ -171,9 +171,14 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .home .logo_container #logo_mid {display:block;float: left;position: absolute; z-index: 9; background: url("../img/layer2.svg") no-repeat 10px 10px/30%;top: 80px; left: 45%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 2s;   -webkit-animation-duration: 2s;   animation-duration: 2s;}
 .home .logo_container #logo_front {display:block;float: left;position: absolute; z-index: 10; background: url("../img/layer3.svg") no-repeat 10px 10px/30%;top: 80px; left: 45%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 3s;  -webkit-animation-duration: 3s;   animation-duration: 3s;}
 
-img.dfrost-logo {
-  width: 300px;
-  height: 300px;
+.home .dfrost-logo {
+  width: 450px;
+  height: 450px;
+  background: url('../img/logo.svg') center center no-repeat;
+  background-size: contain;
+  display: block;
+  margin: 0 auto;
+  z-index: 1000;
 }
 
 /*.home #calendar {background: url("../img/icons/calendar.svg") no-repeat}
@@ -546,6 +551,13 @@ body a:hover{text-decoration: none;}
 
 }*/
 
+@media only screen and (max-width: 1400px) {
+  .home .dfrost-logo {
+    width: 350px;
+    height: 350px;
+  }
+}
+
 @media only screen and (max-width: 1280px) {
   .day2-cutout-img {
     left: -240px;
@@ -562,4 +574,223 @@ body a:hover{text-decoration: none;}
   .main_header .main_menu {
     width: 90%;
   }
+}
+
+@media only screen and (max-width: 992px) {
+  .main_header, .home, .content_wrapper .about .about_cutout, .content_wrapper .about .about_cutout, .content_wrapper .schdl .day1, .content_wrapper .schdl .schdl_cutout2 .day2, .content_wrapper .schdl .schdl_cutout1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .content_wrapper .home {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .home .register_btn {
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .home .register_btn a {
+    display: block;
+  }
+
+  .home .dfrost-logo {
+    width: 250px;
+    height: 250px;
+    margin: 60px auto;
+  }
+
+  .content_wrapper .about .about_cutout h2, .content_wrapper .schdl .schdl_cutout1 h2 {
+    font-size: 36px;
+  }
+
+  .content_wrapper .schdl .day1 h3, .content_wrapper .schdl .schdl_cutout2 .day2 h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .content_wrapper .about .about_cutout p {
+    font-size: 13px;
+  }
+
+  .content_wrapper .schdl .day1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .content_wrapper .about {
+    height: auto;
+    position: relative;
+    background: white;
+    
+  }
+  .content_wrapper .about:after {
+    content: '';
+    background: white;
+    height: 130px;
+    width: 120%;
+    display: block;
+    transform: rotate(-7deg); 
+    position: absolute;
+    bottom: -50px;
+    left: -10%;
+    right: -10%;
+  }
+  .content_wrapper .about .about_cutout {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    height: auto;
+    float: none;
+  }
+  .content_wrapper .about .about_cutout p {
+    width: 100%;
+  }
+  // .content_wrapper .about .about-img-1 {
+  //   transform: rotate(90deg);
+  //   position: absolute;
+  //   left: auto;
+  //   top: -640px;
+  //   right: 0;
+  // }
+  // .content_wrapper .about .about_cutout .bg-holder {
+  //   position: absolute;
+  //   bottom: 0;
+  //   height: 0;
+  // }
+  .content_wrapper .section_body {
+    overflow: hidden;
+  }
+  .content_wrapper .about .about-img-1, .content_wrapper .about .about-img-2 {
+    display: none;
+  }
+  .content_wrapper .about .about_cutout .bg-holder {
+    height: auto;
+  }
+  .content_wrapper .schdl .schdl_cutout1 {
+    float: none;
+    padding-top: 130px;
+    width: auto;
+  }
+  .content_wrapper .schdl .schdl_cutout1 h2 {
+    float: none;
+    text-align: left;
+  }
+  .content_wrapper .schdl .schdl_cutout2 .day2 {
+    padding-top: 40px;
+    padding-left: 15px;
+  }
+  .day2-cutout-img {
+    display: none;
+  }
+  .content_wrapper .schdl .day1 {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    padding-right: 15px;
+  }
+  .content_wrapper .schdl .schdl_cutout2 {
+    width: 50%;
+    display: inline-block;
+  }
+  .content_wrapper .schdl .schdl_cutout2 .day2 h3 {
+    color: #FE07BB;
+  }
+
+  .content_wrapper .schdl .day1 h3 {
+    color: #17FFDD;
+  }
+
+  .content_wrapper .schdl .day1 .event_ls .low {
+    display: block;
+  }
+
+  .content_wrapper .schdl .day2 .sub_hd {
+    // opacity: 0;
+  }
+  .content_wrapper .schdl .day1 .event_ls, .content_wrapper .schdl .day2 .event_ls {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .content_wrapper .schdl .day2 .event_ls .low {
+    color: white;
+  }
+  .content_wrapper .schdl .day2 .event_ls .high {
+    color: white;
+  }
+  .content_wrapper .schdl .sub_hd .sep {
+    display: none;
+  }
+  .content_wrapper .schdl .sub_hd .left, .content_wrapper .schdl .sub_hd .right {
+    display: block;
+  }
+  .content_wrapper .schdl .sub_hd .left {
+    font-size: 22px;  
+  }
+  .content_wrapper .schdl .sub_hd .right {
+    line-height: 1.4;
+    margin-top: 4px;
+  }
+  .content_wrapper .schdl .day1 .sub_hd {
+    margin-bottom: 14px;
+  }
+  .content_wrapper .speakers .speaker_cutout {
+    padding: 40px 30px;
+  }
+  .speaker-cutout-img {
+    display: none; 
+  }
+  .content_wrapper .speakers {
+    position: relative;
+  }
+  .speakers:before {
+    content: '';
+    display: block;
+    width: 120%;
+    height: 160px;
+    background-color: #9C39F3;
+    position: absolute;
+    top: -30px;
+    left: -10%;
+    right: -10%;
+    transform: rotate(-9deg);
+  }
+  .content_wrapper .speakers .first_row {
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 40px;
+    padding-right: 30px;
+    width: 100%;
+  }
+  .content_wrapper .speakers .first_row .col {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: -10px;
+    }
+  .content_wrapper .speakers .first_row .col1,   .content_wrapper .speakers .first_row .col2,   .content_wrapper .speakers .first_row .col3 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .content_wrapper .speakers .first_row .speaker {
+    margin-left: 0; 
+    display: inline-block;
+    width: 49%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 25px;
+  }
+  .content_wrapper .speakers .first_row .col p {
+    display: none;
+  }
+  .content_wrapper .speakers .first_row .speaker img {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  
 }
