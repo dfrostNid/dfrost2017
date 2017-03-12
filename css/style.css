@@ -31,7 +31,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 }
 
 /*Header Navigation Css*/
-.main_header{border: 0;background: rgba(0, 0, 0, .5);padding: 14px 100px 10px;position: fixed;top: 0;z-index: 1200;border: none;}
+.main_header{border: 0;background: rgba(21, 21, 30, 0.8);padding: 14px 100px 10px;position: fixed;top: 0;z-index: 1200;border: none;}
 .main_header .nid_logo{display:block;float:left;margin:0;width:40%;height:40px;z-index:20;}
 
 .nid-logo-img {
@@ -136,7 +136,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 */
 #date, #venue{
   color: #ffffff;
-  font-family: 'Roboto', sans-serif; font-weight: 700;
+  font-family: 'Roboto', sans-serif; font-weight: 500;
 }
   #home .shadow-overlay {position: absolute;top: 0;left: 0;width: 100%;height: 100%;opacity: .9;
   background: -moz-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* FF3.6-15 */
