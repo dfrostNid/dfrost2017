@@ -282,7 +282,12 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
   background-size: cover; 
 }
 
+<<<<<<< HEAD
 .content_wrapper .schdl .schdl_cutout1{display: block;float: right;/*background:url(../img/Final_backgrounds/Schedule-Holder.png) no-repeat center top/100%;*/ width: 38%;position: relative;top: 0;right: 0;padding: 315px 73px 0 100px;}
+=======
+
+.content_wrapper .schdl .schdl_cutout1{display: block;float: right;/*background:url(../img/Final_backgrounds/Schedule-Holder.png) no-repeat center top/100%;*/ width: 38%;position: relative;top: 0;right: 0;padding:  235px 7% 0 7%;}
+>>>>>>> refs/remotes/origin/gh-pages_test
 
 .content_wrapper .schdl .schdl_cutout2{position: relative;}
 
@@ -630,7 +635,11 @@ body a:hover{text-decoration: none;}
 }
 
 @media only screen and (max-width: 992px) {
+<<<<<<< HEAD
   .main_header, .home, .content_wrapper .about .about_cutout, .content_wrapper .about .about_cutout, .content_wrapper .schdl .day1, .content_wrapper .schdl .schdl_cutout2 .day2, .content_wrapper .schdl .schdl_cutout1, .dlabs .dlabs_cnt {
+=======
+  .main_header, .home, .content_wrapper .about .about_cutout, .content_wrapper .about .about_cutout, .content_wrapper .schdl .day1, .content_wrapper .schdl .schdl_cutout2 .day2, .content_wrapper .schdl .schdl_cutout1 {
+>>>>>>> refs/remotes/origin/gh-pages_test
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -786,7 +795,11 @@ body a:hover{text-decoration: none;}
     margin-top: 4px;
   }
   .content_wrapper .schdl .day1 .sub_hd {
+<<<<<<< HEAD
     // margin-bottom: 14px;
+=======
+    margin-bottom: 14px;
+>>>>>>> refs/remotes/origin/gh-pages_test
   }
   .content_wrapper .speakers .speaker_cutout {
     padding: 40px 30px;
@@ -842,6 +855,7 @@ body a:hover{text-decoration: none;}
     margin-bottom: 20px;
     width: 70%;
   }
+<<<<<<< HEAD
   .dlabs .dlabs_cnt {
     width: 100%;
   }
@@ -882,6 +896,8 @@ body a:hover{text-decoration: none;}
   .dlabs .dlabs_cnt .day1 h3, .dlabs .dlabs_cnt .day2 h3, .dlabs .dlabs_cnt .day1 p, .dlabs .dlabs_cnt .day2 p {
     color: white;
   }
+=======
+>>>>>>> refs/remotes/origin/gh-pages_test
 }
 
 @media only screen and (max-width: 768px) {
