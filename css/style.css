@@ -36,7 +36,10 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 
 .nid-logo-img {
   height: 30px;
+  width: 210px;
   display: inline-block;
+  background: url('../img/NID_white_logo.png') left no-repeat;
+  background-size: auto 100%;
 }
 
 .main_header .main_menu{display:block;float:right;margin:0;width:70%;height:40px;z-index:20;text-align: right;padding-top: 10px;}
@@ -91,7 +94,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 #menu li a:after {
   content: '';
   position: absolute;
-  bottom: -18px;
+  bottom: -23px;
   left: 0;
   right: 0;
   width: 100%;
@@ -240,7 +243,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
   background-size: cover; 
 }
 
-.content_wrapper .schdl .schdl_cutout1{display: block;float: right;/*background:url(../img/Final_backgrounds/Schedule-Holder.png) no-repeat center top/100%;*/ width: 38%;position: relative;top: 0;right: 0;padding: 315px 73px 0 0;}
+.content_wrapper .schdl .schdl_cutout1{display: block;float: right;/*background:url(../img/Final_backgrounds/Schedule-Holder.png) no-repeat center top/100%;*/ width: 38%;position: relative;top: 0;right: 0;padding: 315px 73px 0 100px;}
 .content_wrapper .schdl .schdl_cutout2{position: relative;}
 
 .day2-cutout-img {
@@ -537,5 +540,11 @@ body a:hover{text-decoration: none;}
   }
   .content_wrapper .speakers .speaker_cutout {
     padding: 170px 0 0 100px;
+  }
+  .nid-logo-img {
+    width: 40px;
+  }
+  .main_header .main_menu {
+    width: 90%;
   }
 }
