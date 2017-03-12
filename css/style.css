@@ -184,8 +184,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .about{display: block; height: 720px;width: 100%;}
 .content_wrapper .about .about_cutout{display: block;float: left;/*background:url(../img/Final_backgrounds/About-Holder.png) no-repeat center 0/100%;*/ width: 62%;height: 100%;position: relative;left: 0; padding: 200px 100px 70px;}
 .content_wrapper .about .about_cutout h2{display:block;float: left;font-size: 3em;color: #FF00C3;width: 100%;margin-bottom: 20px;font-family: 'Gotham';}
-.content_wrapper .about .about_cutout p{display:block;/*float: left;*/font-size: 1em;line-height: 1.6em;color: #999;width: 45%;margin-bottom: 20px;text-align: justify;}
-
+.content_wrapper .about .about_cutout p{display:block;/*float: left;*/font-size: 1em;line-height: 1.6em;color: #999;width: 45%;margin-bottom: 20px;text-align: left;}
 .content_wrapper .about {
   background:url(../img/Final_backgrounds/BG-About.jpg) no-repeat center top/100%;
   background-size: cover;
@@ -241,7 +240,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
   background-size: cover; 
 }
 
-.content_wrapper .schdl .schdl_cutout1{display: block;float: right;/*background:url(../img/Final_backgrounds/Schedule-Holder.png) no-repeat center top/100%;*/ width: 38%;position: relative;top: 0;right: 0;padding: 315px 73px 0 0;}
+.content_wrapper .schdl .schdl_cutout1{display: block;float: right;/*background:url(../img/Final_backgrounds/Schedule-Holder.png) no-repeat center top/100%;*/ width: 38%;position: relative;top: 0;right: 0;padding:  235px 7% 0 7%;}
 .content_wrapper .schdl .schdl_cutout2{position: relative;}
 
 .day2-cutout-img {
@@ -274,7 +273,24 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .schdl .event_ls .tlk{width: 95px;}
 .content_wrapper .schdl .event_ls .evt{width: 158px;}
 
-
+.download-schdl a {
+   background-color: transparent;
+   border: 2px solid #FF00C3;
+   display: inline-block;
+   padding: 16px 22px;
+   color: #FF00C3;
+   font-weight: 600;
+   font-size: 16px;
+   margin-top: 36px;
+   transition: 0.2s;
+ }
+ 
+ .download-schdl a:hover {
+   background-color: #FF00C3;
+   display: inline-block;
+   transition: 0.2s;
+   color: white;
+ }
 
 /*
 .content_wrapper .schdl .section_icon{display: block;float: left;width: 15%;height: auto;}
@@ -310,7 +326,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .speakers .speaker span.des, .content_wrapper .speakers .speaker h4{color: #00FFE2;}
 .content_wrapper .speakers .speaker span.des{font-size: 0.9em;}
 .content_wrapper .speakers .speaker h4{font-size: 1.3em;margin-bottom: 5px;}
-.content_wrapper .speakers .speaker p{display: block;width: 100%;text-align: justify;font-size: 0.8em;line-height: 1.4em;}
+.content_wrapper .speakers .speaker p{display: block;width: 100%;text-align: left;font-size: 0.8em;line-height: 1.4em;}
 
 .content_wrapper .speakers .first_row {
   text-align: right;
