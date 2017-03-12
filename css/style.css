@@ -43,7 +43,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .main_header .main_menu p{display: block;float: left;height: 100%;width: 100%;vertical-align: bottom;margin: 10px 0;}
 
 /*Content Wrapper css*/
-.content_wrapper{margin-top: 80px;/*max-height: 4500px;*/overflow-y: hidden;}
+.content_wrapper{/*max-height: 4500px;*/overflow-y: hidden;}
 
 /*Menu elements start here*/
 
@@ -120,7 +120,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 /*Fixed menu CSS ends here*/
 
 /*Home Section Css*/
-.content_wrapper .home{display: block;float: left;background:url(../img/star_tiny.png) no-repeat center/cover;height: auto;width: 100%;padding: 10px 100px 50px;position: relative;}
+.content_wrapper .home{display: block;float: left;background:url(../img/star_tiny.png) no-repeat center/cover;height: auto;width: 100%;padding: 80px 100px;position: relative;}
 .home .logo_container, .home .register_btn, .home .options{display: block;float: left;width: 100%;height: auto;border: none;text-align: center;padding: 0 0 40px;}
 .home .register_btn a {border: 1px solid #982cff;color: #17ffdd;font-family: 'Gotham';font-size: 24px;padding: 15px 30px;margin: 0;text-decoration: none;vertical-align: middle;}
 .home .register_btn a:hover{background: #17ffdd;color: #982cff;}
