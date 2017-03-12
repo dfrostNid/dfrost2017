@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>NID Dfrost | March 18-19, 2017</title>
-
+	<link rel="icon" type="image/ico" href="../img/favicon_dfrost.png">
 	<!-- Bootstrap and MDB import -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css" rel="stylesheet">  -->
@@ -15,6 +15,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- <link rel="stylesheet" href="css/animate.css"> -->
 	<link rel="stylesheet" href="css/style.css">
+	
+	<!--Carousal css and js links Please don't replace its position-->
+	<link rel="stylesheet" href="css/jquery.flipster.min.css">
+	<script src="js/jquery.min.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
+    
 	
 	<!-- HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,7 +36,7 @@
 		<nav class="main_menu page-navigation">
 			<!-- <p>menu</p> -->
 			<!-- Menu elements -->
-		   	<!-- <div  class="open">
+		   	<div class="open" id="hamburger-menu">
 				<span id="cls"></span>
 				<span>
 					<ul class="sub-menu ">
@@ -63,7 +69,7 @@
 					</ul>
 				</span>
 				<span id="cls"></span>
-			</div> -->
+			</div>
 			<div id="menu">
 			<ul>
 				<li>
@@ -99,15 +105,8 @@
 		
 		<!--Home-->
 		<section id="home" class="home home-particles">
-			<div class="logo_container" id="logo-wrapper">
-				<div id="logo_back" class="fadeIn"></div>
-				<div id="logo_mid" class="fadeIn"></div>
-				<div id="logo_front" class="fadeIn"></div>
-			</div>
 			
-				
-			
-			
+			<div class="dfrost-logo"></div>
 			<div class="options">
 				<div class="register_btn"><a href="#">REGISTER NOW</a></div>
 					
@@ -115,33 +114,29 @@
 					<p>Ticket sale ends by 09:00 PM, 16 Mar, 2017</p>
 					<div id="date">18 &amp; 19 March</div>
 					<div id="venue">National Institute of Design, Bangalore</div>
-				</div>	
-
-
-				<!-- <div class="date">
-					<a>
-						
-						<div>
-							<img src="img/icons/calendar.svg">
-						</div>
-						<span>18 - 19 March</span>
-					</a>
 				</div>
-			   	<div class="venue">
-			   		<a>
-				   		
-				   		<div><img src="img/icons/location.svg"></div>
-				   		<span>National Institute of Design</span>
-			   		</a>
-			   	</div>
-			   	<div class="schedule">
-			   		<a>
-				   		
-				   		<div><img src="img/icons/schedule.svg"></div>
-				   		<span>Schedule</span>
-			   		</a>
-			   	</div> --> 
 			</div>
+			<!-- Countdown Timer -->
+			<div id="clockdiv">
+			  <div>
+			    <span class="days"></span>
+			    <div class="smalltext">Days</div>
+			  </div>
+			  <div>
+			    <span class="hours"></span>
+			    <div class="smalltext">Hours</div>
+			  </div>
+			  <div>
+			    <span class="minutes"></span>
+			    <div class="smalltext">Minutes</div>
+			  </div>
+			  <div>
+			    <span class="seconds"></span>
+			    <div class="smalltext">Seconds</div>
+			  </div>
+
+			</div>
+			<!-- Countdown Timer ends -->
 		</section>
 		<!-- /Home -->
 
@@ -154,8 +149,6 @@
 					<div class="about-content">
 						<h2>The Design Festival</h2>
 						<p>Dfrost is the annual design and cultural festival hosted by the National Institute of Design R&amp;D campus, Bangalore. This year we are back on 18th and 19th March 2017 with a show, “Beyond the Event Horizon”. With Dfrost '17, we continue our quest to move away from conventional college festivals to create a platform where innovators from various fields engage in thought provoking conversations that brings multiple disciplines together. For designers and non-designers alike, Dfrost is a pathway to gain new perspectives and broaden existing ones.</p>
-
-						<p>Our theme for 2017, 'Beyond The Event Horizon', is a celebration of all that is not commonplace and is extraordinary. It is a space for ideas that exist outside of the mundane. At NID Bangalore, we believe in looking at the world anew, a fresh breath of faerie in a world much too accustomed to its routine reveries. We welcome you to join us as we paint dreamscapes, fashion exciting futures, carve curiosities and explore the edge of our known design universe.</p>
 					</div>
 		   			
 		   			<div class="bg-holder">
@@ -240,12 +233,10 @@
 			    				<span class="time">21:30</span>
 			    				<span class="high evt">Cultural Event - Dance</span>
 			    				<span class="low">NID students</span>
-		    				</div>
+		    				</div>		    			
 		    			</div>
-		    		</div>
-
-
-		    	<div class="schdl_cutout2" >
+		    		</div><!--
+		    	--><div class="schdl_cutout2" >
 		    		<div class="day2">
 		    			<h3>DAY 2</h3>
 		    			<div class="schdl_cnt">
@@ -312,12 +303,16 @@
 			    				<span class="high evt">Cultural Event - Dance</span>
 			    				<span class="low">NID students</span>
 		    				</div>
+			    			<div class="download-schdl">
+	 		    				<a href="#">Download the Schedule</a>
+	 		    			</div>
 		    			</div>
 		    		</div>
 		    		<img class="day2-cutout-img" src="img/Final_backgrounds/Schedule-Day2-Holder.svg" alt="">
 		    		<!-- <div class="test"></div> -->
+
 		    	</div>
-		    	<div class="download_schedule"><a>Click here to download the complete schedule</a></div>
+
 		    </section>
 		   <!--/Schedule-->
 		   
@@ -378,11 +373,144 @@
 		   
 		   <!--dLABS-->
 		    <section id="dlabs" class="dlabs">
-		    	<!-- <div class="dLabs_cutout">
-		    		<img class="day2-cutout-img" src="img/Final_backgrounds/Schedule-Day2-Holder.svg" alt="">
-		    	</div> -->
+		    	<div class="dlabs_cut_heading">
+		    		<h2>dLABS</h2>
+		    	
+		    	</div>
+		    	<img class="dlabs_cutout_img" src="img/Final_backgrounds/dLabs-Holder.svg" alt="">
+		    	<div class="dlabs_cnt">
+		    		<div class="day1">
+		    			<h3>WORKSHOP TITLE</h3>
+		    			<p>Workshop details in brief, can be put into upto two lines.</p>
+		    		</div>
+		    		<div class="day1">
+		    			<h3>WORKSHOP TITLE</h3>
+		    			<p>Workshop details in brief, can be put into upto two lines.</p>
+		    		</div>
+		    		<div class="day1">
+		    			<h3>WORKSHOP TITLE</h3>
+		    			<p>Workshop details in brief, can be put into upto two lines.</p>
+		    		</div>
+		    		<div class="day2">
+		    			<h3>WORKSHOP TITLE</h3>
+		    			<p>Workshop details in brief, can be put into upto two lines.</p>
+		    		</div>
+		    		<div class="day2">
+		    			<h3>WORKSHOP TITLE</h3>
+		    			<p>Workshop details in brief, can be put into upto two lines.</p>
+		    		</div>
+		    	</div>
+		    	
 		   	</section>
 		   	<!--/dLABS-->
+		   	<section id ="competitions" class="competitions">
+		   		<div class="com_content">
+		   			<h2>ONLINE COMPETITIONS</h2>
+		   			<P>Get a chance to showcase your work at a prominent platform.
+		   			Dfrost is hosting online contest for digital painting and photography.</P>
+		   			<p><span class="color">The winning entries will be on display at Dfrost, and the winners will bag goodies worth Rs 10,000.</span></p>
+		   			<p>Contests are open till <span class="color">March 16, 11:00pm.</span> All the best.</p>
+		   		</div>
+		   		<div class="com_img">
+		   			<a href="#"><img src="img/Final_backgrounds/images/Digital-Painting.png" class="painting" alt=""></a>
+		   			<a href="#"><img src="img/Final_backgrounds/images/Photography.png" class="photography" alt=""></a>
+		   		</div>
+		   	</section>
+		   	
+		   	<!--Gallery-->
+		   	<section id="gallery" class="gallery">
+		   		
+		   			<h2>Gallery</h2>
+		   			<article id="demo-carousel" class="demo">
+					    <div id="carousel">
+					        <ul class="flip-items">
+					            <li >
+					                <img src="img/gallery/d16_1.jpg">
+					            </li>
+					            <li >
+					                <img src="img/gallery/d16_2.jpg">
+					             </li>
+					            <li >
+					                <img src="img/gallery/d16_3.jpg">
+					            </li>
+					            <li >
+					                <img src="img/gallery/d16_4.jpg">
+					            </li>
+					            <li >
+					                <img src="img/gallery/d16_5.jpg">
+					            </li>
+					            <li >
+					                <img src="img/gallery/d16_6.jpg">
+					            </li>
+					            <li >
+					                <img src="img/gallery/d16_7.jpg">
+					            </li>
+					            <li >
+					                <img src="img/gallery/d16_8.jpg">
+					            </li>
+					            <li >
+					                <img src="img/gallery/d16_9.jpg">
+					            </li>
+					            <li >
+					                <img src="img/gallery/d16_10.jpg">
+					            </li>
+					        </ul>
+					    </div>
+					    <script>
+					        var carousel = $("#carousel").flipster({
+					            style: 'carousel',
+					            spacing: -0.5,
+					            nav: true,
+					            buttons:   true,
+					        });
+					    </script>
+					</article>
+		   		
+		   	</section>
+		   	<!--/Gallery-->
+
+		   	<!--EXTRAS-->
+		   	<section id="extras" class="extras">
+		   		<div class="extras_heading">
+		   			<h2>EXTRAS</h2>
+		   		</div>
+		   		<img class="extras_cutout_img" src="img/Final_backgrounds/Extras-Holder.svg" alt="">
+		   		<div class="dlabs_cnt">
+		    		<div class="day1">
+		    			<img src="img/Final_backgrounds/Extras-Image-Holder.svg">
+		    			<div class="content">
+		    				<h3>dGALLERY</h3>
+		    				<p>Design exhibition by Nidians<br>
+		    					18th - 19th March, 10am - 5pm</p>
+		    				<p>An exhibition/sale of souvenirs and bespoke products crafted right here at NID. Take home some uniquely designed, handcrafted love.</p>
+		    			</div>
+		    		</div>
+		    		<div class="day1">
+		    			<img src="img/Final_backgrounds/Extras-Image-Holder.svg">
+		    			<div class="content">
+		    				<h3>dLOUNGE</h3>
+		    				<p>An exhibition/sale of souvenirs and bespoke products crafted right here at NID. Take home some uniquely designed, handcrafted love.</p>
+		    			</div>
+		    		</div>
+		    		<div class="day1">
+		    			<img src="img/Final_backgrounds/Extras-Image-Holder.svg">
+		    			<div class="content">
+		    				<h3>dSTALL</h3>
+		    				<p>An exhibition/sale of souvenirs and bespoke products crafted right here at NID. Take home some uniquely designed, handcrafted love.</p>
+		    			</div>
+		    		</div>
+		    		<div class="day1">
+		    			<img src="img/Final_backgrounds/Extras-Image-Holder.svg">
+		    			<div class="content">
+		    				<h3>dSTORE</h3>
+		    				<p>An exhibition/sale of souvenirs and bespoke products crafted right here at NID. Take home some uniquely designed, handcrafted love.</p>
+		    			</div>
+		    		</div>
+		    		
+		    		
+		    	</div>
+		   	</section>
+		   	<!--/EXTRAS-->
 
 		   	<!--PARTNERS-->
 		   	<section id="partners" class="partners">
@@ -392,20 +520,12 @@
 		   	</section>
 		   	<!--/PARTNERS-->
 
-		   	<!--Gallery-->
-		   	<section id="gallery" class="gallery">
-		   		<div class="gallery_cnt">
-		   			<h2>Gallery</h2>
-		   		</div>
-		   	</section>
-		   	<!--/Gallery-->
-		   	
 		   	<!--Venue-->
 		   	<section id="venue" class="venue">
 		   		<div class="venue_cnt">
 		   			<h2>VENUE</h2>
 		   			<p class="content">
-		   				<span>National Institute of Design, R&D Campus</span><br>
+		   				<span>National Institute of Design, R&amp;D Campus</span><br>
 		   				12, HMT Link Road (off Tumkur Road),<br>
 		   				Peenya, Bengaluru - 560022
 					</p>
@@ -417,14 +537,6 @@
 		   	</section>
 		   	<!--/Venue-->
 
-		   	
-
-
-
-
-
-		   
-		   
 		<!--/Section Body-->
 	    </section>
     </div>
@@ -473,9 +585,7 @@
 <script src="js/mainAnimation.js"></script>
 <script type="text/javascript" src="js/jquery.rippler.min.js"></script>
 <script type="text/javascript" src="js/jquery.combinedScroll.js"></script>
-<script src="js/noframework.waypoints.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-
 
 </body>
 </html>
