@@ -4,6 +4,44 @@
  *
  * ------------------------------------------------------------------- 
  */ 
+//Nav switch
+$(document).ready (function() {
+
+  //reset the navbar to hide elemnets by default
+  $('#hamburger-menu').hide();
+  $('#menu').hide();
+
+  if(window.innerWidth < 1200){
+    $('#hamburger-menu').show();
+    $('#menu').hide();  
+    console.log("hamburger menu"+window.innerWidth);  
+  }
+  else if (window.innerWidth >= 1200){
+    $('#menu').show();
+    $('#hamburger-menu').hide();
+    console.log("navbar menu"+window.innerWidth);
+  }
+});
+
+$(window).resize(function() {
+
+  if ($(this).innerWidth() < 1200) {
+
+    $('#menu').hide();
+    $('#hamburger-menu').show();
+    console.log("hamburger menu"+window.innerWidth);
+
+
+  } 
+  else if($(this).innerWidth() >= 1200) {
+
+    $('#menu').show();
+    $('#hamburger-menu').hide();
+    console.log("navbar menu"+window.innerWidth);
+    }
+
+});
+//Nav switch ends here
 
 (function($) {
 
