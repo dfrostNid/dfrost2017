@@ -640,7 +640,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 }
 
 .content_wrapper .gallery {
-  background: url('../img/gallery-collage.png') center center no-repeat;
+  background: url('../img/gallery-collage-tiny.png') center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
