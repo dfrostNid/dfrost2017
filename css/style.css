@@ -321,9 +321,9 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .schdl .day1 .event_ls .time, .content_wrapper .schdl .day2 .event_ls .time{margin-right: 20px;}
 .content_wrapper .schdl .day1 .event_ls .high, .content_wrapper .schdl .day2 .event_ls .high{margin-right: 10px;display: inline-block;}
 .content_wrapper .schdl .day1 .event_ls, .content_wrapper .schdl .day2 .event_ls{line-height: 1.4em;}
-.content_wrapper .schdl .event_ls .lab{width: 150px;}
-.content_wrapper .schdl .event_ls .tlk{width: 150px;}
-.content_wrapper .schdl .event_ls .evt{width: 158px;}
+.content_wrapper .schdl .event_ls .lab{width: 160px;}
+.content_wrapper .schdl .event_ls .tlk{width: 160px;}
+.content_wrapper .schdl .event_ls .evt{width: 160px;}
 
 .download-schdl a {
    background-color: transparent;
@@ -711,8 +711,8 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .partners{display: block;float: left;width: 100%;height: 600px;background: url(../img/Final_backgrounds/images/bg_08.jpg) no-repeat center top/100%;background-size: 100% auto;background-size: cover;}
 .content_wrapper .partners h2 {font-size: 3em;color: #141414;width: 100%;margin-bottom: 30px;font-family: 'Gotham';}
 .content_wrapper .partners .partner_cnt{display: block;float: left;/*width: 50%;*/padding: 100px;}
-.content_wrapper .partners .partner_pics{padding: 100px 50px 50px 180px;}
-.content_wrapper .partners .partner_cnt img {height: 100px;}
+.content_wrapper .partners .partner_pics{padding: 100px 0 50px 300px; display: inline-block;}
+.content_wrapper .partners .partner_cnt img {height: 100px; padding: 20px;}
 
 /*******Extras CSS Begins******/
 .content_wrapper .extras h2 {font-size: 3em;color: #fff;width: 100%;margin-bottom: 30px;font-family: 'Gotham';position: relative;z-index: 20;}

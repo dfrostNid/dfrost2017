@@ -433,56 +433,15 @@ if($(window).width()>768) {
             })
   }
   
-  //********PARALLAX EFFECT WITH LAYERS***********//
-  // function addLogoMovement()
-  //   {
-  //       var logoBackHolder = document.getElementById('logo_back');
-  //       var logoMidHolder = document.getElementById('logo_mid');
-  //       var logoFrontHolder = document.getElementById('logo_front');
-        
-  //       var offsetTiny = 25, offsetMid = 30, offsetBig = 35; // offsetCloud = 200;
-        
-          
-  //           $("html").unbind("mousemove");
-  //           $("html").bind("mousemove",function(e)
-  //           {
-                
-  //               var x = e.clientX, y = e.clientY;
-  //               var middleX = $.getHalfWidth(), middleY = $.getHalfHeight();
-                
-  //               if(x < middleX) x = -(middleX - x);
-  //               else x = x - middleX;
-                
-  //               if(y < middleY) y = -(middleY - y);
-  //               else y = y - middleY;
-                
-  //               var tinyX = -(parseInt((x / middleX) * offsetTiny)), tinyY = -(parseInt((y / middleY) * offsetTiny));
-  //               var midX = -(parseInt((x / middleX) * offsetMid)), midY = -(parseInt((y / middleY) * offsetMid));
-  //               var bigX = -(parseInt((x / middleX) * offsetBig)), bigY = -(parseInt((y / middleY) * offsetBig));
-            
-  //               var logoBackX = -120 + tinyX;
-  //               var logoBackY = 100 + tinyY;
-  //       var logoMidX = -120 + midX;   
-  //       var logoMidY = 100 + midY;
-  //               var logoFrontX = -120 + bigX;   
-  //               var logoFrontY = 100 + bigY;
-
-  //               TweenMax.to(logo_back,1,{marginLeft:logoBackX,top:logoBackY,ease:Expo.easeOut});
-  //               TweenMax.to(logo_mid,1,{marginLeft:logoMidX,top:logoBackY,ease:Expo.easeOut});
-  //               TweenMax.to(logo_front,1,{marginLeft:logoFrontX,top:logoBackY,ease:Expo.easeOut});
-                               
-  //           })
-        
-  //       }
-
-  
   
     $(document).ready(function()
         {
           
+          if($(window).width()>768) {
             addLogoMovement();
+        }
            
-            $(document).delegate('.open', 'click', function(event){
+        $(document).delegate('.open', 'click', function(event){
         $(this).addClass('oppenned');
         //$(this).attr('id','close');
         event.stopPropagation();
@@ -497,12 +456,7 @@ if($(window).width()>768) {
       });
         });
 
-
- 
-
 })(jQuery);
-
-
 
 
 
@@ -513,18 +467,3 @@ $(document).ready(function($) {
   $('.page-navigation').onePageNav();
   
 });
-
-//Navbar element underline hide when top is reached
-
-// var waypoint = new Waypoint({
-//   element: document.getElementById('menu'),
-//   handler: function(direction) {    
-//     if(direction == 'up') {
-//       //notify('Direction: ' + direction)
-//       //console.log("working");
-//       $('#a').addClass('hidden');
-//       console.log("hidden");
-//     }
-//   }
-// })
-
