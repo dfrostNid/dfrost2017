@@ -676,7 +676,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 /******FADEIN DOWN END****/
 
 /*******Venue CSS Begins******/
-.content_wrapper .venue{display: block;float: left;width: 100%;height: auto;background-color: #fff;}
+.content_wrapper .venue{display: block;float: left;width: 100%;height: auto;background-color: #f0ffff;}
 .content_wrapper .venue .venue_cnt, .content_wrapper .venue .map{display: block;float: left;width: 50%;padding: 100px;}
 .content_wrapper .venue .venue_cnt{color: #141414;}
 .content_wrapper .venue h2 {font-size: 3em;color: #FF00C3;width: 100%;margin-bottom: 30px;font-family: 'Gotham';}
@@ -712,7 +712,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 }
 
 /*******Partners CSS Begins******/
-.content_wrapper .partners{display: block;float: left;width: 100%;height: auto;background: url(../img/Final_backgrounds/images/bg_08.jpg) no-repeat center top/100%;background-size: 100% auto;background-size: cover;}
+.content_wrapper .partners{display: block;float: left;width: 100%;height: auto;background: #fff; /*url(../img/Final_backgrounds/images/bg_08.jpg) no-repeat center top/100%;background-size: 100% auto;background-size: cover;*/}
 .content_wrapper .partners h2 {font-size: 3em;color: #141414;width: 100%;margin-bottom: 30px;font-family: 'Gotham';}
 .content_wrapper .partners .partner_cnt{display: block;float: left;/*width: 50%;*/padding: 100px;}
 .content_wrapper .partners .partner_pics{/*padding: 100px 0 50px 300px;*/ display: inline-block;}

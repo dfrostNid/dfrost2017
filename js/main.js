@@ -90,6 +90,26 @@ var deadline = new Date(Date.parse(new Date())+ (end-start));
 initializeClock('clockdiv', deadline);
 //Coountdown timer ends
 
+//Map mobile media-query
+/*
+$(document).ready (function() {
+
+  if(window.innerWidth <= 320){
+    $('#nid-map').removeClass('map');
+    $('#nid-map').addClass('mobile-map');      
+  }
+});
+
+$(window).resize(function() {
+
+  if(window.innerWidth <= 320){
+    $('#nid-map').removeClass('map');
+    $('#nid-map').addClass('mobile-map');      
+  }
+});*/
+
+
+
 // Ticket Modal
 // $('.register_btn').click(function(){
 //   var frametarget = $(this).attr('href');
