@@ -357,7 +357,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
   background-size: cover; 
 }
 .content_wrapper .speakers .speaker_cutout{display: block;float: left; width: 47%;height: 100%;position: relative;left: 0;padding: 380px 0 0 170px;}
-
+.speaker a {display: inline-block; text-decoration: underline; color: #9c39f3;}
 .speaker-cutout-img {
   position: absolute;
   top: 0;
@@ -640,7 +640,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 }
 
 .content_wrapper .gallery {
-  background: url('../img/gallery-collage.png') center center no-repeat;
+  background: url('../img/gallery-collage-tiny.png') center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
