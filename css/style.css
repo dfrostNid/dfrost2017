@@ -625,7 +625,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .competitions .com_content, .content_wrapper .competitions .com_img{display: block;float: left;}
 .content_wrapper .competitions .com_img{height: auto;width: 60%;padding: 100px 0px 100px 50px;position: relative;}
 .content_wrapper .competitions .com_content{width: 40%;}
-.painting, .photography{width: 48%;padding: 20px;}
+.painting, .photography{width: 48%;padding: 20px;max-width: 340px;}
 .content_wrapper .competitions .com_content p{margin-bottom: 30px;line-height: 1.4em;}
 .content_wrapper .competitions .com_content p .color{color: #00FFE2;}
 .photography{position: absolute;top: 150px;}
