@@ -508,6 +508,17 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .dlabs .dlabs_cnt .day img, .dlabs .dlabs_cnt .day .content {
   display: inline-block;
   float: left;
+  position: relative;
+}
+
+.dlabs .dlabs_cnt .day img {
+  z-index: 100;
+  margin-right: -15px;
+}
+
+.dlabs .dlabs_cnt .day .content {
+  z-index: 10;
+  padding-left: 30px;
 }
 
 /*Footer css*/
@@ -958,6 +969,8 @@ body a:hover{text-decoration: none;}
   .dlabs .dlabs_cnt .day img {
     width: 100%;
     height: auto;
+    width: 110%;
+    top: -10px;
   }
   .content_wrapper .extras {
     display: none;
@@ -1003,6 +1016,9 @@ body a:hover{text-decoration: none;}
   }
   .content_wrapper .competitions .com_content, .content_wrapper .competitions .com_img {
     float: none;
+  }
+  .dlabs .dlabs_cnt .day {
+    overflow: hidden;
   }
 }
 
