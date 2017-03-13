@@ -676,10 +676,10 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .venue .venue_cnt, .content_wrapper .venue .map{display: block;float: left;width: 50%;padding: 100px;}
 .content_wrapper .venue .venue_cnt{color: #141414;}
 .content_wrapper .venue h2 {font-size: 3em;color: #FF00C3;width: 100%;margin-bottom: 30px;font-family: 'Gotham';}
-.content_wrapper .venue p{font-size: 1.2em;margin-bottom: 20px;}
+.content_wrapper .venue p{font-size: 1.2em;margin-bottom: 20px; padding: 10px;}
 .content_wrapper .venue p.content{line-height: 1.4em;}
 .content_wrapper .venue p span{font-weight: bold;}
-
+.maps {margin-left: 12px; font-weight: 700;}
 
 /*******Competitions CSS Begins******/
 .content_wrapper .competitions{display: block;width: 100%;height: 600px;background: url('../img/Final_backgrounds/BG-Schedule.jpg') no-repeat center top/100%;background-size: 100% auto;background-size: cover;padding: 100px;}
@@ -1144,6 +1144,6 @@ body a:hover{text-decoration: none;}
   }
 }
 
-@media only screen and (max-width: 768px) {
-  
+@media only screen and (max-width: 320px) {
+  .content_wrapper .venue .venue_cnt, .content_wrapper .venue .map{display: block;float: left;width: 100%;padding: 30px;}  
 }
