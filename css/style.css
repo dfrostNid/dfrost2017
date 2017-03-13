@@ -872,18 +872,18 @@ body a:hover{text-decoration: none;}
   .content_wrapper .about .about_cutout p {
     width: 100%;
   }
-  // .content_wrapper .about .about-img-1 {
-  //   transform: rotate(90deg);
-  //   position: absolute;
-  //   left: auto;
-  //   top: -640px;
-  //   right: 0;
-  // }
-  // .content_wrapper .about .about_cutout .bg-holder {
-  //   position: absolute;
-  //   bottom: 0;
-  //   height: 0;
-  // }
+  .content_wrapper .about .about-img-1 {
+    transform: rotate(90deg);
+    position: absolute;
+    left: auto;
+    top: -640px;
+    right: 0;
+  }
+  .content_wrapper .about .about_cutout .bg-holder {
+    position: absolute;
+    bottom: 0;
+    height: 0;
+  }
   .content_wrapper .section_body {
     overflow: hidden;
   }
@@ -934,7 +934,7 @@ body a:hover{text-decoration: none;}
   }
 
   .content_wrapper .schdl .day2 .sub_hd {
-    // opacity: 0;
+     opacity: 0;
   }
   .content_wrapper .schdl .day1 .event_ls, .content_wrapper .schdl .day2 .event_ls {
     font-size: 13px;
@@ -1162,5 +1162,5 @@ body a:hover{text-decoration: none;}
 }
 
 @media only screen and (max-width: 320px) {
-  .content_wrapper .venue .venue_cnt, .content_wrapper .venue .map{display: block;float: left;width: 100%;padding: 30px;}  
+  .content_wrapper .venue .venue_cnt, .content_wrapper .venue .map {display: block;float: left;width: 100%;padding: 30px;}  
 }
