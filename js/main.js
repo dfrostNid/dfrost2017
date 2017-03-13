@@ -8,17 +8,17 @@
 $(document).ready (function() {
 
   //reset the navbar to hide elemnets by default
-  $('#hamburger-menu').hide();
-  $('#menu').hide();
+  // $('#hamburger-menu').hide();
+  // $('#menu').hide();
 
   if(window.innerWidth < 1200){
-    $('#hamburger-menu').show();
-    $('#menu').hide();  
+    $('#hamburger-menu').removeClass('hidden');
+    $('#menu').addClass('hidden');  
     console.log("hamburger menu"+window.innerWidth);  
   }
   else if (window.innerWidth >= 1200){
-    $('#menu').show();
-    $('#hamburger-menu').hide();
+    $('#menu').removeClass('hidden');
+    $('#hamburger-menu').addClass('hidden');
     console.log("navbar menu"+window.innerWidth);
   }
 });
@@ -27,16 +27,16 @@ $(window).resize(function() {
 
   if ($(this).innerWidth() < 1200) {
 
-    $('#menu').hide();
-    $('#hamburger-menu').show();
+    $('#hamburger-menu').removeClass('hidden');
+    $('#menu').addClass('hidden');
     console.log("hamburger menu"+window.innerWidth);
 
 
   } 
   else if($(this).innerWidth() >= 1200) {
 
-    $('#menu').show();
-    $('#hamburger-menu').hide();
+    $('#menu').removeClass('hidden');
+    $('#hamburger-menu').addClass('hidden');
     console.log("navbar menu"+window.innerWidth);
     }
 

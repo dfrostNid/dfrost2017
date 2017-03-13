@@ -4282,7 +4282,7 @@ var RR = function (parent, $) {
 				}
 			});
 			var title = $(document).find("title").text(),
-				altTitle = "Don't just leave yet!",
+				altTitle = "Don't leave just yet!",
 				$docTitle = $(document).find("title");
 			document.addEventListener("visibilitychange", function () {
 				document.hidden ? $docTitle.text(altTitle) : $docTitle.text(title)

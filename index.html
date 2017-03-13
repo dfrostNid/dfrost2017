@@ -13,14 +13,14 @@
 	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css" rel="stylesheet">  -->
 	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"> -->
 	<!-- <link href="css/rippler.min.css" rel="stylesheet"> -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900&effect=anaglyph" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- <link rel="stylesheet" href="css/animate.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 	
 	<!--Carousal css and js links Please don't replace its position-->
 	<!-- <link rel="stylesheet" href="css/jquery.flipster.min.css"> -->
-	<script src="js/jquery.min.js"></script>
+	<!-- <script src="js/jquery.min.js"></script> -->
     <!-- <script src="js/jquery.flipster.min.js"></script>
      -->
 	
@@ -38,7 +38,7 @@
 		<nav class="main_menu page-navigation">
 			<!-- <p>menu</p> -->
 			<!-- Menu elements -->
-		   	<div class="open" id="hamburger-menu">
+		   	<div class="open hidden" id="hamburger-menu">
 				<span id="cls"></span>
 				<span>
 					<ul class="sub-menu ">
@@ -72,7 +72,8 @@
 				</span>
 				<span id="cls"></span>
 			</div>
-			<div id="menu">
+
+			<div id="menu" class="hidden">
 			<ul>
 				<li>
 					<a href="#about" title="about">About</a>
@@ -599,10 +600,12 @@
     
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-1.11.3.min.js"></script>
+<!-- <script src="js/jquery-1.11.3.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js" integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g=" crossorigin="anonymous"></script>
+<!-- <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script> -->
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/bootstrap.min.js"></script>
-<script src="js/modernizr.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/mainAnimation.js"></script>
 <script type="text/javascript" src="js/jquery.rippler.min.js"></script>
