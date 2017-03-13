@@ -712,8 +712,9 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .partners h2 {font-size: 3em;color: #141414;width: 100%;margin-bottom: 30px;font-family: 'Gotham';}
 .content_wrapper .partners .partner_cnt{display: block;float: left;/*width: 50%;*/padding: 100px;}
 .content_wrapper .partners .partner_pics{/*padding: 100px 0 50px 300px;*/ display: inline-block;}
-.content_wrapper .partners .partner_cnt img {height: 100px; padding: 15px;
+.content_wrapper .partners .partner_cnt img {height: 100px; padding: 15px; padding-left: 0; padding-right: 30px;
 }
+
 
 /*******Extras CSS Begins******/
 .content_wrapper .extras h2 {font-size: 3em;color: #fff;width: 100%;margin-bottom: 30px;font-family: 'Gotham';position: relative;z-index: 20;}
@@ -1141,6 +1142,18 @@ body a:hover{text-decoration: none;}
   }
   .featured-sub {
     margin-bottom: 12px;
+  }
+  .content_wrapper .partners .partner_cnt img {
+    height: 90px;
+  }
+  .main_footer {
+    padding: 40px 30px;
+  }
+  .main_footer .footer_content, .main_footer .social_wrap {
+    display: block;
+    width: 100%;
+    margin-bottom: 24px;
+    line-height: 1.4;
   }
 }
 
