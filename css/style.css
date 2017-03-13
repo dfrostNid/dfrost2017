@@ -298,7 +298,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .day2-cutout-img {
   position: absolute;
   top: 0;
-  left: -99px;
+  left: -105px;
   height: 840px;
 }
 
@@ -351,7 +351,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .schdl .section_icon .ico{display: block;float: left;width: 100%;height: 100%;}*/
 
 /*Speakers Section css*/
-.content_wrapper .speakers{display: block;float: left;width: 100%;}
+.content_wrapper .speakers{display: block;width: 100%;}
 .content_wrapper .speakers {
   background:url(../img/Final_backgrounds/BG-dTalks.jpg) no-repeat center top/100%;
   background-size: cover; 
@@ -442,6 +442,68 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 
 /*.content_wrapper .speakers .section_icon{display: block;float: left;width: 15%;height: auto;}
 .content_wrapper .speakers .section_icon .ico{display: block;float: left;width: 100%;height: 100%;}*/
+
+.featured {
+  background: url('../img/Final_backgrounds/BG-Extras.jpg') center center no-repeat;
+  background-size: cover;
+  padding: 40px 100px;  
+  background-attachment: fixed;
+}
+
+.featured h3 {
+  font-size: 24px;
+  color: white;
+  z-index: 100;
+  position: absolute;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  bottom: 0;
+}
+
+.featured .main {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.featured-sub:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 160px;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.8)));
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+  background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+  background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+
+.featured-sub {
+  width: 300px;
+  position: relative;
+  padding: 0 8px;
+}
+
+.featured img {
+  width: 100%;
+}
+
+.featured-others {
+  width: 100%;
+  padding: 20px 100px;
+}
+
+.featured-others .featured-sub {
+  display: inline-block;
+  width: 33%;
+  height: 200px;
+  overflow: hidden;
+}
 
 .content_wrapper .dlabs{display: block;width: 100%;overflow: hidden;/*height: 1000px;*/background:url(../img/Final_backgrounds/4k-solid.jpg) no-repeat center top/100%;
   background-size: cover;position: relative;}
@@ -625,7 +687,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .competitions .com_content, .content_wrapper .competitions .com_img{display: block;float: left;}
 .content_wrapper .competitions .com_img{height: auto;width: 60%;padding: 100px 0px 100px 50px;position: relative;}
 .content_wrapper .competitions .com_content{width: 40%;}
-.painting, .photography{width: 48%;padding: 20px;}
+.painting, .photography{width: 48%;padding: 20px;max-width: 340px;}
 .content_wrapper .competitions .com_content p{margin-bottom: 30px;line-height: 1.4em;}
 .content_wrapper .competitions .com_content p .color{color: #00FFE2;}
 .photography{position: absolute;top: 150px;}
@@ -688,7 +750,7 @@ body a:hover{text-decoration: none;}
 
 @media only screen and (max-width: 1280px) {
   .day2-cutout-img {
-    left: -240px;
+    left: -140px;
   }
   .speaker-cutout-img {
     left: -1398px;
@@ -721,6 +783,10 @@ body a:hover{text-decoration: none;}
   .dlabs .dlabs_cnt .day {
     height: 200px;
   }
+  .featured-others .featured-sub {
+    width: 32.8%;
+  }
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -1054,6 +1120,26 @@ body a:hover{text-decoration: none;}
   .content_wrapper .venue .venue_cnt {
     padding: 40px 30px;
     width: 100%;
+  }
+  .featured {
+    padding: 40px 30px;
+  }
+  .featured .main {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 0;
+  }
+  .featured-others {
+    padding: 0;
+  }
+  .featured-others .featured-sub {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    padding: 0;
+  }
+  .featured-sub {
+    margin-bottom: 12px;
   }
 }
 
