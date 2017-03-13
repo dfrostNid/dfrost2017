@@ -447,15 +447,15 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
   background-size: cover;position: relative;}
 .dlabs .dlabs_cutout_img{position: absolute;right: -1px;height: 1000px;top: 0;}
 .dlabs .dlabs_cnt {display: block;float: left;width: 80%;padding:100px;}
-.dlabs .dlabs_cnt .day11{background:url(../img/Workshop-Bamboo.png) no-repeat center top/100%;width: 550px;height: 165px; padding: 35px 10px 10px 160px;}
-.dlabs .dlabs_cnt .day12{background:url(../img/Workshop-Visual-Art.png) no-repeat center top/100%;width: 550px;height: 165px; padding: 35px 10px 10px 160px;}
-.dlabs .dlabs_cnt .day13{background:url(../img/Workshop-Mapbox.png) no-repeat center top/100%;width: 550px;height: 165px; padding: 35px 10px 10px 160px;}
-.dlabs .dlabs_cnt .day21{background:url(../img/Workshop-Design-Sprint.png) no-repeat center top/100%;width: 550px;height: 165px; padding: 35px 10px 10px 160px;}
-.dlabs .dlabs_cnt .day22{background:url(../img/Workshop-Biomimicry.png) no-repeat center top/100%;width: 550px;height: 165px; padding: 35px 10px 10px 160px;}
-.dlabs .dlabs_cnt .day23{background:url(../img/Workshop-Paper.png) no-repeat center top/100%;width: 550px;height: 165px; padding: 35px 10px 10px 160px;}
-.dlabs .dlabs_cnt  h3{color: #00FFE2;margin-bottom: 10px;}
+.dlabs .dlabs_cnt .day11{background:url(../img/Workshop-Bamboo.png) no-repeat center top/100%;width: 768px;height: 173px; padding: 30px 35px 10px 200px;}
+.dlabs .dlabs_cnt .day12{background:url(../img/Workshop-Visual-Art.png) no-repeat center top/100%;width: 768px;height: 173px; padding: 30px 35px 10px 200px;}
+.dlabs .dlabs_cnt .day13{background:url(../img/Workshop-Mapbox.png) no-repeat center top/100%;width: 768px;height: 173px; padding: 30px 35px 10px 200px;}
+.dlabs .dlabs_cnt .day21{background:url(../img/Workshop-Design-Sprint.png) no-repeat center top/100%;width: 768px;height: 173px; padding: 30px 35px 10px 200px;}
+.dlabs .dlabs_cnt .day22{background:url(../img/Workshop-Biomimicry.png) no-repeat center top/100%;width: 768px;height: 173px; padding: 30px 35px 10px 200px;}
+.dlabs .dlabs_cnt .day23{background:url(../img/Workshop-Paper.png) no-repeat center top/100%;width: 768px;height: 173px; padding: 30px 35px 10px 200px;}
 .dlabs .dlabs_cnt  h3{color: #982cff;margin-bottom: 10px;}
-.dlabs .dlabs_cnt  p{color: #999;}
+.dlabs .dlabs_cnt  h3 p{color: #999; display: inline; font-style: italic;}
+.dlabs .dlabs_cnt  p{color: #999; line-height: 1.25em;}
 .dlabs_cut_heading{display: block;float: right;width: 20%;padding: 380px 0 0 20px;}
 .content_wrapper .dlabs h2 {display: block;float: right;font-size: 3em;
     color: #00FFE2;
@@ -599,7 +599,7 @@ height: 200px;
 width: 100%;margin-bottom: 20px;
 }
 .extras .dlabs_cnt .day1 img{width: 150px;float: left;margin-right: 40px;}
-.extras .dlabs_cnt .day1 .content p{margin-bottom: 20px;}
+.extras .dlabs_cnt .day1 .content p{margin-bottom: 20px; line-height: 1.25em;}
 .extras .dlabs_cnt .day1 .content h3{margin-bottom: 30px;color:#00FFE2;font-size: 1.2em; }
 
 
