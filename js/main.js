@@ -437,7 +437,7 @@ if($(window).width()>768) {
     $(document).ready(function()
         {
           
-          if($(window).width()>768) {
+          if(($(window).innerWidth()>992)&&($(window).innerWidth()<1365)) {
             addLogoMovement();
         }
            
