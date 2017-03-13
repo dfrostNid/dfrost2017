@@ -456,7 +456,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .dlabs .dlabs_cnt  h3{color: #982cff;margin-bottom: 10px;}
 .dlabs .dlabs_cnt  h3 p{color: #999; display: inline; font-style: italic;}
 .dlabs .dlabs_cnt  p{color: #999; line-height: 1.25em;}
-.dlabs_cut_heading{display: block;float: right;width: 20%;padding: 380px 0 0 20px;}
+.dlabs_cut_heading{display: block;float: right;width: 20%;padding: 250px 0 0 20px;}
 .content_wrapper .dlabs h2 {display: block;float: right;font-size: 3em;
     color: #00FFE2;
     width: 100%;
@@ -620,7 +620,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 
 
 /*******Competitions CSS Begins******/
-.content_wrapper .competitions{display: block;width: 100%;height: 600px;background: url(../img/Final_backgrounds/images/bg_06.jpg) no-repeat center top/100%;background-size: 100% auto;background-size: cover;padding: 100px;}
+.content_wrapper .competitions{display: block;width: 100%;height: 600px;background: url('../img/Final_backgrounds/BG-Schedule.jpg') no-repeat center top/100%;background-size: 100% auto;background-size: cover;padding: 100px;}
 .content_wrapper .competitions h2 {font-size: 3em;color: #fff;width: 50%;margin-bottom: 40px;font-family: 'Gotham';line-height: 1.2em;}
 .content_wrapper .competitions .com_content, .content_wrapper .competitions .com_img{display: block;float: left;}
 .content_wrapper .competitions .com_img{height: auto;width: 60%;padding: 100px 0px 100px 50px;position: relative;}
@@ -634,6 +634,16 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .gallery{display: block;float: left;width: 100%;height: 600px;background-color: #fff;padding: 100px;}
 .content_wrapper .gallery h2 {font-size: 3em;color: #982cff;;width: 100%;margin-bottom: 30px;font-family: 'Gotham';}
 .content_wrapper .gallery .gallery_cnt{display: block;width: 100%;padding: 100px;}
+
+.content_wrapper .competitions {
+  border-bottom: 6px solid #FF00C3;
+}
+
+.content_wrapper .gallery {
+  background: url('../img/gallery-collage.png') center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 /*******Partners CSS Begins******/
 .content_wrapper .partners{display: block;float: left;width: 100%;height: 600px;background: url(../img/Final_backgrounds/images/bg_08.jpg) no-repeat center top/100%;background-size: 100% auto;background-size: cover;}
@@ -712,11 +722,17 @@ body a:hover{text-decoration: none;}
 }
 
 @media only screen and (max-width: 992px) {
-  .main_header, .home, .content_wrapper .about .about_cutout, .content_wrapper .about .about_cutout, .content_wrapper .schdl .day1, .content_wrapper .schdl .schdl_cutout2 .day2, .content_wrapper .schdl .schdl_cutout1 {
+  .main_header, .home, .content_wrapper .about .about_cutout, .content_wrapper .about .about_cutout, .content_wrapper .schdl .day1, .content_wrapper .schdl .schdl_cutout2 .day2, .content_wrapper .schdl .schdl_cutout1, .content_wrapper .partners .partner_cnt {
     padding-left: 30px;
     padding-right: 30px;
   }
 
+  .main_header {
+    height: 76px;
+  }
+  .nid-logo-img {
+    margin-top: 7px;
+  }
   .content_wrapper .home {
     padding-left: 30px;
     padding-right: 30px;
@@ -971,6 +987,8 @@ body a:hover{text-decoration: none;}
     height: auto;
     width: 110%;
     top: -10px;
+    max-height: 160px;
+    max-width: 190px;
   }
   .content_wrapper .extras {
     display: none;
@@ -1019,6 +1037,21 @@ body a:hover{text-decoration: none;}
   }
   .dlabs .dlabs_cnt .day {
     overflow: hidden;
+  }
+  .content_wrapper .gallery {
+    height: 500px;
+    background-position: 0;
+  }
+  .content_wrapper .partners .partner_cnt {
+    padding-top: 40px;
+  }
+  .content_wrapper .partners h2 {
+    width: 100%;
+    font-size: 36px;
+  }
+  .content_wrapper .venue .venue_cnt {
+    padding: 40px 30px;
+    width: 100%;
   }
 }
 
