@@ -466,6 +466,50 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 
 }
 
+.dlabs .dlabs_cnt {
+  width: 800px;
+  padding-right: 40px;
+}
+
+.dlabs .dlabs_cnt .day {
+  background: none;
+  padding: 0;
+  width: 100%;
+}
+
+.dlabs .dlabs_cnt .day img {
+  display: inline-block;
+  height: 150px;
+  width: auto;
+}
+
+.dlabs .dlabs_cnt .day .content {
+  width: 75%;
+  padding-left: 18px;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  background-color: white;
+  position: relative;
+  height: 136px;
+  margin-top: 7px;
+}
+
+.dlabs .dlabs_cnt .day .content:after {
+  content: '';
+  height: 136px;
+  width: 33px;
+  background: url('../img/edge.svg') center center no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: -31px;
+  top: 0;
+}
+
+.dlabs .dlabs_cnt .day img, .dlabs .dlabs_cnt .day .content {
+  display: inline-block;
+  float: left;
+}
+
 /*Footer css*/
 .main_footer{display: block;float: left;width: 100%;padding: 30px 100px;height: auto;background: #141414;color: #8d8d8d;border: none;}
 .main_footer .social_wrap, .main_footer .footer_content{display: block;float: left;}
@@ -622,7 +666,6 @@ body a:hover{text-decoration: none;}
 }
 
 @media only screen and (max-width: 1280px) {
-
   .day2-cutout-img {
     left: -240px;
   }
@@ -637,6 +680,25 @@ body a:hover{text-decoration: none;}
   }
   .main_header .main_menu {
     width: 90%;
+  }
+  .dlabs .dlabs_cnt {
+    width: 650px;
+  }
+  .dlabs .dlabs_cnt .day img {
+    height: 176px;
+  }
+  .dlabs .dlabs_cnt .day .content {
+    width: 65%;
+    height: 176px;
+    margin-top: 0;
+  }
+  .dlabs .dlabs_cnt .day .content:after {
+    height: 176px;
+    width: 42px;
+    right: -36px;
+  }
+  .dlabs .dlabs_cnt .day {
+    height: 200px;
   }
 }
 
@@ -740,6 +802,8 @@ body a:hover{text-decoration: none;}
   .content_wrapper .schdl .schdl_cutout1 h2 {
     float: none;
     text-align: left;
+    font-size: 36px;
+
   }
   .content_wrapper .schdl .schdl_cutout2 .day2 {
     padding-top: 40px;
@@ -812,10 +876,10 @@ body a:hover{text-decoration: none;}
     content: '';
     display: block;
     width: 120%;
-    height: 160px;
+    height: 200px;
     background-color: #9C39F3;
     position: absolute;
-    top: -30px;
+    top: -100px;
     left: -10%;
     right: -10%;
     transform: rotate(-9deg);
@@ -845,6 +909,9 @@ body a:hover{text-decoration: none;}
     padding-right: 5px;
     margin-bottom: 25px;
   }
+  .content_wrapper .speakers .speaker_cutout h2 {
+    font-size: 36px;
+  }
   .content_wrapper .speakers .first_row .col p {
     display: none;
   }
@@ -852,6 +919,92 @@ body a:hover{text-decoration: none;}
     margin: 0;
     margin-bottom: 20px;
     width: 70%;
+  }
+  .dlabs .dlabs_cutout_img {
+    display: none;
+  }
+  .dlabs .dlabs_cnt {
+    padding: 30px 30px 20px;
+    width: 100%;
+  }
+  .dlabs_cut_heading {
+    width: 100%;
+    float: none;
+    padding: 40px 30px;
+  }
+  .content_wrapper .dlabs_cut_heading h2 {
+    float: none;
+    font-size: 36px;
+  }
+  .dlabs .dlabs_cnt .day {
+    width: 49%;
+    display: inline-block;
+    height: 266px;
+    background-color: white;
+    margin-bottom: 4px;
+  }
+  .dlabs .dlabs_cnt .day .content {
+    height: auto;
+    width: auto;
+    padding: 16px 12px;
+  }
+  .dlabs .dlabs_cnt .day .content h3 {
+    margin-bottom: 0;
+  }
+  .dlabs .dlabs_cnt .day .content > p {
+    display: none;
+  }
+  .dlabs .dlabs_cnt .day .content:after {
+    display: none;
+  }
+  .dlabs .dlabs_cnt .day img {
+    width: 100%;
+    height: auto;
+  }
+  .content_wrapper .extras {
+    display: none;
+  }
+  .content_wrapper .competitions {
+    padding: 40px 30px;
+    height: auto;
+  }
+  .content_wrapper .competitions .com_content {
+    width: 100%;
+  }
+  .content_wrapper .competitions .com_content h2 {
+    width: 100%;
+    font-size: 36px;
+  }
+  .content_wrapper .competitions .com_content p {
+    display: none;
+  }
+  .content_wrapper .dlabs:before {
+    content: '';
+    display: block;
+    width: 120%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: -100px;
+    left: -10%;
+    right: -10%;
+    transform: rotate(-9deg);
+  }
+  .content_wrapper .competitions .com_img {
+    width: 100%;
+    padding: 0;
+  }
+  .content_wrapper .competitions .com_img a {
+    display: block;
+  }
+  .content_wrapper .competitions .com_img img {
+    padding: 0;
+    height: 200px;
+    width: auto;
+    position: static;
+  }
+  .content_wrapper .competitions .com_content, .content_wrapper .competitions .com_img {
+    float: none;
   }
 }
 
