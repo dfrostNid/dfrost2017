@@ -765,6 +765,14 @@ body a:hover{text-decoration: none;}
 }
 
 @media only screen and (max-width: 1280px) {
+
+  .sponsor2 {
+  width: 20%;
+  display: block;
+  position: unset;
+  margin: 0 auto;
+  }
+
   .day2-cutout-img {
     left: -140px;
   }
@@ -834,7 +842,7 @@ body a:hover{text-decoration: none;}
   .home .dfrost-logo {
     width: 250px;
     height: 250px;
-    margin: 60px auto;
+    /*margin: 60px auto;*/
   }
 
   .content_wrapper .about .about_cutout h2, .content_wrapper .schdl .schdl_cutout1 h2 {
@@ -1172,10 +1180,19 @@ body a:hover{text-decoration: none;}
 
   .content_wrapper .venue .venue_cnt, .content_wrapper .venue .map {display: block;float: left;width: 100%;padding: 30px;}
 
-.sponsor2 {
-  width: 20%;
+/*.sponsor2 {
+  width: 50%;
   display: block;
   position: unset;
   margin: 0 auto;
+  }*/
 }
+
+@media only screen and (max-width: 600px){
+  .sponsor2 {
+  width: 50%;  
+  display: block;
+  position: unset;
+  margin: 0 auto;
+  }
 }
