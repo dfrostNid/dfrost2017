@@ -129,7 +129,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 /*Home Section Css*/
 .content_wrapper .home{display: block;float: left;background:url(../img/star_tiny.png) no-repeat center/cover;height: auto;width: 100%;padding: 80px 100px;position: relative;}
 .home .logo_container, .home .register_btn, .home .options{display: block;float: left;width: 100%;height: auto;border: none;text-align: center;padding: 0 0 40px;}
-.home .register_btn a {border: 1px solid #982cff;color: #17ffdd;font-family: 'Gotham';font-size: 24px;padding: 15px 30px;margin: 0;text-decoration: none;vertical-align: middle;}
+.home .register_btn a {border: 1px solid #982cff;color: #17ffdd;font-family: 'Gotham', sans-serif;font-size: 24px;padding: 15px 30px;margin: 0;text-decoration: none;vertical-align: middle;}
 .home .register_btn a:hover{background: #17ffdd;color: #982cff;}
 .home .register_btn{border: none;position: relative;z-index: 20;padding: 40px;}
 .home .options{display: block;float: left;width: 100%; height: auto;border: none;position: relative;z-index: 20;}
@@ -187,6 +187,16 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
   position: center;
 }
 
+.sponsor2 {
+  width: 200px;
+  display: block;
+  position: absolute;
+  top: 400px;
+  right: 0;
+  margin-right: 350px;
+
+}
+
 /*.home #calendar {background: url("../img/icons/calendar.svg") no-repeat}
 .home #venue {background: url("../img/icons/location.svg") no-repeat}
 .home #schedule {background: url("../img/icons/schedule.svg") no-repeat}*/
@@ -236,7 +246,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 /*About Section*/
 .content_wrapper .about{display: block; height: 720px;width: 100%;}
 .content_wrapper .about .about_cutout{display: block;float: left;/*background:url(../img/Final_backgrounds/About-Holder.png) no-repeat center 0/100%;*/ width: 62%;height: 100%;position: relative;left: 0; padding: 200px 100px 70px;}
-.content_wrapper .about .about_cutout h2{display:block;float: left;font-size: 3em;color: #FF00C3;width: 100%;margin-bottom: 20px;font-family: 'Gotham';}
+.content_wrapper .about .about_cutout h2{display:block;float: left;font-size: 3em;color: #FF00C3;width: 100%;margin-bottom: 20px;font-family: 'Gotham', sans-serif;}
 .content_wrapper .about .about_cutout p{display:block;/*float: left;*/font-size: 1em;line-height: 1.6em;color: #999;width: 45%;margin-bottom: 20px;text-align: left;}
 
 .content_wrapper .about {
@@ -306,11 +316,11 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
   height: 840px;
 }
 
-.content_wrapper .schdl .schdl_cutout1 h2{display:block;float: left;font-size: 3em;color: #FFFFFF;width: 100%;text-align: right;font-family: 'Gotham';}
+.content_wrapper .schdl .schdl_cutout1 h2{display:block;float: left;font-size: 3em;color: #FFFFFF;width: 100%;text-align: right;font-family: 'Gotham', sans-serif;}
 .content_wrapper .schdl .day1{display: block;padding: 100px 0 220px 100px;}
-.content_wrapper .schdl .day1 h3{display: block;font-family: 'Gotham';font-size:3em;color: #FF00C3;width: 100%;margin-bottom: 40px;}
+.content_wrapper .schdl .day1 h3{display: block;font-family: 'Gotham', sans-serif;font-size:3em;color: #FF00C3;width: 100%;margin-bottom: 40px;}
 .content_wrapper .schdl .schdl_cutout2 .day2{display: block;width: 100%;position: relative;color: #141414;padding: 120px 0 60px 100px; z-index: 10;}
-.content_wrapper .schdl .schdl_cutout2 .day2 h3{display: block;float: left;font-family: 'Gotham';font-size:3em;color: #141414;width: 100%;margin-bottom: 40px;}
+.content_wrapper .schdl .schdl_cutout2 .day2 h3{display: block;float: left;font-family: 'Gotham', sans-serif;font-size:3em;color: #141414;width: 100%;margin-bottom: 40px;}
 .content_wrapper .schdl .download_schedule{display: block;float: right;position: relative;top: -170px;width: 280px;text-align: center;margin-right: 70px;}
 .content_wrapper .schdl .download_schedule a{font-size: 1.4em;display: block;float: right;width: 100%;padding: 10px;border: 1px solid;border-style: dashed;line-height: 1.4em;border-radius: 8px;color:rgba(255,255,255, 0.7);cursor: pointer;}
 .content_wrapper .schdl .download_schedule a:hover{color:rgba(255,255,255, 0.88);}
@@ -369,7 +379,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
   
 }
 
-.content_wrapper .speakers .speaker_cutout h2{display:block;float: left;font-size: 3em;color: #00FFE2;width: 100%;font-family: 'Gotham';position: relative;z-index: 20;}
+.content_wrapper .speakers .speaker_cutout h2{display:block;float: left;font-size: 3em;color: #00FFE2;width: 100%;font-family: 'Gotham', sans-serif;position: relative;z-index: 20;}
 .content_wrapper .speakers .first_row, .content_wrapper .speakers .second_row{display: block;float: right;margin-top: 160px;position: relative;}
 .content_wrapper .speakers .first_row{width: 60%;}
 
@@ -679,7 +689,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .content_wrapper .venue{display: block;float: left;width: 100%;height: auto;background-color: #f0ffff;}
 .content_wrapper .venue .venue_cnt, .content_wrapper .venue .map{display: block;float: left;width: 50%;padding: 100px;}
 .content_wrapper .venue .venue_cnt{color: #141414;}
-.content_wrapper .venue h2 {font-size: 3em;color: #FF00C3;width: 100%;margin-bottom: 30px;font-family: 'Gotham';}
+.content_wrapper .venue h2 {font-size: 3em;color: #FF00C3;width: 100%;margin-bottom: 30px;font-family: 'Gotham', sans-serif;}
 .content_wrapper .venue p{font-size: 1.2em;margin-bottom: 20px; padding: 10px;}
 .content_wrapper .venue p.content{line-height: 1.4em;}
 .content_wrapper .venue p span{font-weight: bold;}
@@ -687,7 +697,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 
 /*******Competitions CSS Begins******/
 .content_wrapper .competitions{display: block;width: 100%;height: 600px;background: url('../img/Final_backgrounds/BG-Schedule.jpg') no-repeat center top/100%;background-size: 100% auto;background-size: cover;padding: 100px;}
-.content_wrapper .competitions h2 {font-size: 3em;color: #fff;width: 50%;margin-bottom: 40px;font-family: 'Gotham';line-height: 1.2em;}
+.content_wrapper .competitions h2 {font-size: 3em;color: #fff;width: 50%;margin-bottom: 40px;font-family: 'Gotham', sans-serif;line-height: 1.2em;}
 .content_wrapper .competitions .com_content, .content_wrapper .competitions .com_img{display: block;float: left;}
 .content_wrapper .competitions .com_img{height: auto;width: 60%;padding: 100px 0px 100px 50px;position: relative;}
 .content_wrapper .competitions .com_content{width: 40%;}
@@ -698,7 +708,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 
 /*******Gallery CSS Begins******/
 .content_wrapper .gallery{display: block;float: left;width: 100%;height: 600px;background-color: #fff;padding: 100px;}
-.content_wrapper .gallery h2 {font-size: 3em;color: #982cff;;width: 100%;margin-bottom: 30px;font-family: 'Gotham';}
+.content_wrapper .gallery h2 {font-size: 3em;color: #982cff;;width: 100%;margin-bottom: 30px;font-family: 'Gotham', sans-serif;}
 .content_wrapper .gallery .gallery_cnt{display: block;width: 100%;padding: 100px;}
 
 .content_wrapper .competitions {
@@ -713,7 +723,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 
 /*******Partners CSS Begins******/
 .content_wrapper .partners{display: block;float: left;width: 100%;height: auto;background: #fff; /*url(../img/Final_backgrounds/images/bg_08.jpg) no-repeat center top/100%;background-size: 100% auto;background-size: cover;*/}
-.content_wrapper .partners h2 {font-size: 3em;color: #141414;width: 100%;margin-bottom: 30px;font-family: 'Gotham';}
+.content_wrapper .partners h2 {font-size: 3em;color: #141414;width: 100%;margin-bottom: 30px;font-family: 'Gotham', sans-serif;}
 .content_wrapper .partners .partner_cnt{display: block;float: left;/*width: 50%;*/padding: 100px;}
 .content_wrapper .partners .partner_pics{/*padding: 100px 0 50px 300px;*/ display: inline-block;}
 .content_wrapper .partners .partner_cnt img {height: 100px; padding: 15px; padding-left: 0; padding-right: 30px;
@@ -721,7 +731,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 
 
 /*******Extras CSS Begins******/
-.content_wrapper .extras h2 {font-size: 3em;color: #fff;width: 100%;margin-bottom: 30px;font-family: 'Gotham';position: relative;z-index: 20;}
+.content_wrapper .extras h2 {font-size: 3em;color: #fff;width: 100%;margin-bottom: 30px;font-family: 'Gotham', sans-serif;position: relative;z-index: 20;}
 
 .content_wrapper .extras{display: block;width: 100%;overflow: hidden;/*height: 1000px;*/background:url(../img/Final_backgrounds/BG-Extras.jpg) no-repeat center top/100%;
   background-size: cover;position: relative;}
@@ -1159,8 +1169,13 @@ body a:hover{text-decoration: none;}
     margin-bottom: 24px;
     line-height: 1.4;
   }
-}
 
-@media only screen and (max-width: 320px) {
-  .content_wrapper .venue .venue_cnt, .content_wrapper .venue .map {display: block;float: left;width: 100%;padding: 30px;}  
+  .content_wrapper .venue .venue_cnt, .content_wrapper .venue .map {display: block;float: left;width: 100%;padding: 30px;}
+
+.sponsor2 {
+  width: 20%;
+  display: block;
+  position: unset;
+  margin: 0 auto;
+}
 }
