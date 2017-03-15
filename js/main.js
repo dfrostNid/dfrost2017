@@ -82,7 +82,7 @@ function initializeClock(id, endtime) {
   updateClock();
   var timeinterval = setInterval(updateClock, 1000);
 }
-var end = +new Date("2017-03-17T21:00:00");
+var end = +new Date("2017-03-18T23:59:59");
 // var now = new Date();
 var start = +new Date();
 var deadline = new Date(Date.parse(new Date())+ (end-start));

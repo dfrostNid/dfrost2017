@@ -176,25 +176,36 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .home .logo_container #logo_mid {display:block;float: left;position: absolute; z-index: 9; background: url("../img/layer2.svg") no-repeat 10px 10px/30%;top: 80px; left: 45%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 2s;   -webkit-animation-duration: 2s;   animation-duration: 2s;}
 .home .logo_container #logo_front {display:block;float: left;position: absolute; z-index: 10; background: url("../img/layer3.svg") no-repeat 10px 10px/30%;top: 80px; left: 45%; margin-left: -130px; height: inherit; width: inherit; -moz-animation-duration: 3s;  -webkit-animation-duration: 3s;   animation-duration: 3s;}
 
-.home .dfrost-logo {
+.home {
   width: 450px;
   height: 450px;
-  background: url('../img/logo.svg') center center no-repeat;
-  background-size: contain;
+  /*background: url('../img/logo.svg') center center no-repeat;
+  background-size: contain;*/
   display: block;
   margin: 0 auto;
   z-index: 1000;
   position: center;
 }
+.dfrost-logo {
+  width: 450px;
+  height: 450px;
+  display: block;
+  background: url('../img/logo.svg') center center no-repeat;
+  background-size: contain;
+  margin: -50px auto;
+  z-index: 1000;
+  position: center;
+}
 
 .sponsor2 {
-  width: 200px;
-  display: block;
-  position: absolute;
-  top: 400px;
-  right: 0;
-  margin-right: 350px;
-
+height: 100px;
+display: block;
+/*position: relative;
+top: 400px;
+right: 0;
+margin-right: 350px;*/
+z-index: 1000;
+margin: 20px auto 0 auto;
 }
 
 /*.home #calendar {background: url("../img/icons/calendar.svg") no-repeat}
@@ -349,6 +360,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
    font-size: 16px;
    margin-top: 36px;
    transition: 0.2s;
+   
  }
  
  .download-schdl a:hover {
@@ -379,10 +391,13 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
   
 }
 
-.content_wrapper .speakers .speaker_cutout h2{display:block;float: left;font-size: 3em;color: #00FFE2;width: 100%;font-family: 'Gotham', sans-serif;position: relative;z-index: 20;}
+.content_wrapper .speakers .speaker_cutout h2{display:block;float: left;font-size: 3em;color: #00FFE2;width: 100%;font-family: 'Gotham', sans-serif;position: relative;z-index: 20; top: -100px;}
 .content_wrapper .speakers .first_row, .content_wrapper .speakers .second_row{display: block;float: right;margin-top: 160px;position: relative;}
 .content_wrapper .speakers .first_row{width: 60%;}
 
+#sp-dtalks { 
+  display:block;float: left;position: absolute;z-index: 20; width: 50%;
+}
 
 
 .content_wrapper .speakers .second_row{width: 60%;}
@@ -533,7 +548,7 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .dlabs .dlabs_cnt  h3 p{color: #999; display: inline; font-style: italic;}
 .dlabs .dlabs_cnt  p{color: #999; line-height: 1.25em;}
 .dlabs_cut_heading{display: block;float: right;width: 20%;padding: 250px 0 0 20px;}
-.content_wrapper .dlabs h2 {display: block;float: right;font-size: 3em;
+.content_wrapper .dlabs h2 {display: block;float: right;font-size: 3em; top: -80px;
     color: #00FFE2;
     width: 100%;
     font-family: 'Gotham';
@@ -595,6 +610,14 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .dlabs .dlabs_cnt .day .content {
   z-index: 10;
   padding-left: 30px;
+}
+
+#sp-dlabs {
+  display: block;
+  float: left;
+  position: absolute;
+  z-index: 20;
+  width: 12%;
 }
 
 /*Footer css*/
@@ -704,7 +727,16 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 .painting, .photography{width: 48%;padding: 20px;max-width: 340px;}
 .content_wrapper .competitions .com_content p{margin-bottom: 30px;line-height: 1.4em;}
 .content_wrapper .competitions .com_content p .color{color: #00FFE2;}
-.photography{position: absolute;top: 150px;}
+.photography{position: absolute;top: 150px; right: 10px;}
+
+#upload {
+  position: absolute;
+  margin: 0 30px;
+  padding: 15px 30px 15px 30px;
+  width: auto;
+  text-align: center;
+
+}
 
 /*******Gallery CSS Begins******/
 .content_wrapper .gallery{display: block;float: left;width: 100%;height: 600px;background-color: #fff;padding: 100px;}
@@ -724,10 +756,29 @@ body, header, footer, .content_wrapper, .content_wrapper .home, .content_wrapper
 /*******Partners CSS Begins******/
 .content_wrapper .partners{display: block;float: left;width: 100%;height: auto;background: #fff; /*url(../img/Final_backgrounds/images/bg_08.jpg) no-repeat center top/100%;background-size: 100% auto;background-size: cover;*/}
 .content_wrapper .partners h2 {font-size: 3em;color: #141414;width: 100%;margin-bottom: 30px;font-family: 'Gotham', sans-serif;}
-.content_wrapper .partners .partner_cnt{display: block;float: left;/*width: 50%;*/padding: 100px;}
+.content_wrapper .partners .partner_cnt{display: block;/*float: left;*//*width: 50%;*/padding: 100px;}
 .content_wrapper .partners .partner_pics{/*padding: 100px 0 50px 300px;*/ display: inline-block;}
 .content_wrapper .partners .partner_cnt img {height: 100px; padding: 15px; padding-left: 0; padding-right: 30px;
 }
+
+.sponsors {}
+
+#sp-title {
+  color:#9C39F3;
+  font-family: 'Roboto',sans-serif; font-weight: 600;
+}
+
+.sp-ass {
+  
+}
+.sp-ass img {height: 200px !important;}
+
+.sp-other {
+  padding-right: 50px;
+  padding-top: 50px;
+  display: inline-block;
+}
+
 
 
 /*******Extras CSS Begins******/
@@ -747,6 +798,12 @@ width: 100%;margin-bottom: 20px;
 .extras .dlabs_cnt .day1 .content p{margin-bottom: 20px; line-height: 1.25em;}
 .extras .dlabs_cnt .day1 .content h3{margin-bottom: 30px;color:#00FFE2;font-size: 1.2em; }
 
+#sp-dgallery{
+  width: 150px;
+  position: absolute;
+  margin: -64px auto auto 100px;
+
+}
 
 body a:hover{text-decoration: none;}
 
@@ -761,16 +818,17 @@ body a:hover{text-decoration: none;}
   .home .dfrost-logo {
     width: 350px;
     height: 350px;
+    margin: -25px auto;
   }
 }
 
 @media only screen and (max-width: 1280px) {
 
   .sponsor2 {
-  width: 20%;
+  height: 80px;
   display: block;
   position: unset;
-  margin: 0 auto;
+  margin: 30px auto auto;
   }
 
   .day2-cutout-img {
@@ -1028,7 +1086,10 @@ body a:hover{text-decoration: none;}
   }
   .content_wrapper .speakers .speaker_cutout h2 {
     font-size: 36px;
+    top: 0px;
   }
+#sp-dtalks {margin-left: 180px;}
+
   .content_wrapper .speakers .first_row .col p {
     display: none;
   }
@@ -1052,7 +1113,10 @@ body a:hover{text-decoration: none;}
   .content_wrapper .dlabs_cut_heading h2 {
     float: none;
     font-size: 36px;
+    top: 0px;;
   }
+  #sp-dlabs {width: 20%; margin-left: 200px; top: 30px;}
+
   .dlabs .dlabs_cnt .day {
     width: 49%;
     display: inline-block;
@@ -1180,6 +1244,13 @@ body a:hover{text-decoration: none;}
 
   .content_wrapper .venue .venue_cnt, .content_wrapper .venue .map {display: block;float: left;width: 100%;padding: 30px;}
 
+
+  #upload{
+    width: auto;
+    position: relative;
+    display: block;
+    margin: 10px auto 50px;
+}
 /*.sponsor2 {
   width: 50%;
   display: block;
@@ -1190,9 +1261,9 @@ body a:hover{text-decoration: none;}
 
 @media only screen and (max-width: 600px){
   .sponsor2 {
-  width: 50%;  
+  /*width: 50%;*/  
   display: block;
   position: unset;
-  margin: 0 auto;
+  margin: 30px auto auto;
   }
 }
