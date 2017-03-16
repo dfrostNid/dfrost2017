@@ -315,6 +315,15 @@ margin: 20px auto 0 auto;
   background-size: cover; 
 }
 
+#mobile_hack{
+  display: none;
+}
+.line1_hack{
+  display: inline-block;
+}
+.line2_hack{
+  display: block;
+}
 
 .content_wrapper .schdl .schdl_cutout1{display: block;float: right;/*background:url(../img/Final_backgrounds/Schedule-Holder.png) no-repeat center top/100%;*/ width: 38%;position: relative;top: 0;right: 0;padding:  235px 7% 0 7%;}
 
@@ -1250,6 +1259,14 @@ body a:hover{text-decoration: none;}
     position: relative;
     display: block;
     margin: 10px auto 50px;
+}
+
+/**hacky code starts for vasu dixit**/
+#mobile_hack{
+  display: block;
+}
+.line1_hack, .line2_hack{
+  display: none;
 }
 /*.sponsor2 {
   width: 50%;
